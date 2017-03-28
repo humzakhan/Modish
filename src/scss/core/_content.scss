@@ -17,7 +17,7 @@ html, body {
 .page-container {
     position: relative;
 
-    @media (min-width: $grid-breakpoints-md) {
+    @media (min-width: $screen-size-md) {
         display: table;
         table-layout: fixed;
         height: 100%;
@@ -31,7 +31,7 @@ html, body {
 }
 
 .page-content {
-    @media (min-width: $grid-breakpoints-md) {
+    @media (min-width: $screen-size-md) {
         display: table-row;
     }
 }
@@ -54,7 +54,7 @@ html, body {
     padding-bottom: $line-height-lg;
     width: 100%;
 
-    @media (min-width: $grid-breakpoints-md) {
+    @media (min-width: $screen-size-md) {
         display: table-cell;
         vertical-align: top;
     }

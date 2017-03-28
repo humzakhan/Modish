@@ -1,0 +1,88 @@
+/************************************************************************
+*
+* variables.scss 
+* ----------------------------------------------------------------------
+* Sass Variables for the template.
+*
+* Author: Humza Khan
+* Date: Mar 28, 2017.
+*
+*************************************************************************/
+
+@import 'core/colors';
+
+// Fonts
+
+$font-family-base:                         'Lato', sans-serif !default;
+
+$font-size-base:                            1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                              1.25rem !default;
+$font-size-sm:                              .875rem !default;
+$font-size-xs:                              .75rem !default;
+
+// Paddings
+
+$padding-base-vertical:     				7px;
+$padding-base-horizontal:   				12px;
+
+$padding-large-vertical:    				9px;
+$padding-large-horizontal:  				15px;
+
+$padding-small-vertical:    				6px;
+$padding-small-horizontal:  				11px;
+
+$padding-xs-vertical:       				5px;
+$padding-xs-horizontal:     				0px;
+
+$content-padding-large:                     20px;
+$content-padding-base:                      15px;
+$content-padding-small:                     10px;
+
+// Screen sizes
+
+$screen-size-xs:                            0;
+$screen-size-sm:                            576px;
+$screen-size-md:                            768px;
+$screen-size-lg:                            992px;
+$screen-size-xl:                            1200px;
+
+// Brand Colors
+
+$brand-primary:         				    $color-primary-4;
+$brand-success:         					$color-success-4;
+$brand-info:            					$color-info-4;
+$brand-warning:         					$color-warning-4;
+$brand-danger:         						$color-danger-4;
+
+// Panels
+
+$panel-body-padding:          				$content-padding-large;
+$panel-heading-padding:       				$content-padding-base $content-padding-large;
+$panel-footer-padding:        				$content-padding-large;
+
+$panel-footer-bg:             			   #fcfcfc;
+$panel-default-heading-bg:    			   #fcfcfc;
+
+$panel-default-text:                        #333;
+$panel-default-border:                      #c7c8c8;
+$panel-default-bg:                          #f6f7f7;
+
+$panel-primary-text:                        #fff;
+$panel-primary-border:                       $color-primary-4;
+$panel-primary-heading-bg:                   $brand-primary;
+
+$panel-success-text:          				#fff;
+$panel-success-border:        				 $color-success-4;
+$panel-success-heading-bg:    				 $brand-success;
+
+$panel-info-text:             				#fff;
+$panel-info-border:           				 $color-info-4;
+$panel-info-heading-bg:       				 $brand-info;
+
+$panel-warning-text:          			   #fff;
+$panel-warning-border:        				 $color-warning-4;
+$panel-warning-heading-bg:    				 $brand-warning;
+
+$panel-danger-text:           				#fff;
+$panel-danger-border:         				 $color-danger-4;
+$panel-danger-heading-bg:     				 $brand-danger;

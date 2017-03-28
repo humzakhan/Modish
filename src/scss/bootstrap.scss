@@ -1,18 +1,17 @@
-/************************************************************************
-*
-* bootstrap.scss 
-* ----------------------------------------------------------------------
-* Compile bootstrap, in order to allow usage of its variables and mixins.
-*
-* Author: Humza Khan
-* Date: Mar 28, 2017.
-*
-*************************************************************************/
+/*!
+ * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
+ * Copyright 2011-2017 The Bootstrap Authors
+ * Copyright 2011-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
 
 // Core variables and mixins
-@import "../../bower_components/bootstrap/scss/../../bower_components/bootstrap/scss/variables";
+@import "../../bower_components/bootstrap/scss/variables";
 @import "../../bower_components/bootstrap/scss/mixins";
 @import "../../bower_components/bootstrap/scss/custom";
+
+// Core Variable overrides
+@import "core/variables";
 
 // Reset and dependencies
 @import "../../bower_components/bootstrap/scss/normalize";
