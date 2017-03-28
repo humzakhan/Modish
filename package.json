@@ -1,0 +1,22 @@
+{
+  "name": "modish",
+  "version": "1.0.0",
+  "description": "Beautiful looking, open source admin dashboard template.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/humzakhan/modish.git"
+  },
+  "author": "Humza Khan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/humzakhan/modish/issues"
+  },
+  "homepage": "https://github.com/humzakhan/modish#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

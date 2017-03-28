@@ -1,0 +1,18 @@
+{
+  "name": "modish",
+  "description": "Beautiful looking, open source admin dashboard template.",
+  "main": "index.js",
+  "authors": [
+    "Humza Khan"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/humzakhan/modish",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
