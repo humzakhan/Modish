@@ -30,56 +30,11 @@
 *************************************************************************/
 /************************************************************************
 *
-* content.scss 
+* mixins.scss 
 * ----------------------------------------------------------------------
-* Content's basic layout of the web app
+* custom mixins for the template.
 *
 * Author: Humza Khan
-* Date: Mar 28, 2017.
+* Date: Apr 17, 2017.
 *
 *************************************************************************/
-html, body {
-  width: 100%;
-  height: 100%; }
-
-.page-container {
-  position: relative; }
-  @media (min-width: 768px) {
-    .page-container {
-      display: table;
-      table-layout: fixed;
-      height: 100%; } }
-
-@-moz-document url-prefix() {
-  .page-container {
-    height: 1px; } }
-
-@media (min-width: 768px) {
-  .page-content {
-    display: table-row; } }
-
-.content {
-  padding: 1.33333 1.33333; }
-  .content:after {
-    content: '';
-    display: table;
-    clear: both; }
-  .page-header + .content {
-    padding-top: 0; }
-
-.content-wrapper {
-  padding-bottom: 1.33333;
-  width: 100%; }
-  @media (min-width: 768px) {
-    .content-wrapper {
-      display: table-cell;
-      vertical-align: top; } }
-
-.content-group {
-  margin-bottom: 20px !important; }
-
-.content-group-sm {
-  margin-bottom: 15px !important; }
-
-.content-group-lg {
-  margin-bottom: 30px !important; }

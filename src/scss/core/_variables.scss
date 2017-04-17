@@ -15,10 +15,11 @@
 
 $font-family-base:                         'Lato', sans-serif !default;
 
-$font-size-base:                            1rem !default; // Assumes the browser default, typically `16px`
-$font-size-lg:                              1.25rem !default;
-$font-size-sm:                              .875rem !default;
-$font-size-xs:                              .75rem !default;
+$font-size-base:                            16px !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                              19px !default;
+$font-size-sm:                              14px !default;
+$font-size-xs:                              11px !default;
+$icon-font-size:                            13px !default;
 
 // Paddings
 
@@ -38,6 +39,15 @@ $content-padding-large:                     20px;
 $content-padding-base:                      15px;
 $content-padding-small:                     10px;
 
+$sidebar-link-padding-vertical:             12px;
+$sidebar-link-padding-horizontal:           $content-padding-large;
+
+// Line Heights
+
+$line-height-large:         				1.4285715;
+$line-height-small:         				1.6666667;
+$line-height-computed:    					20px; // ~20px
+
 // Screen sizes
 
 $screen-size-xs:                            0;
@@ -53,6 +63,7 @@ $brand-success:         					$color-success-4;
 $brand-info:            					$color-info-4;
 $brand-warning:         					$color-warning-4;
 $brand-danger:         						$color-danger-4;
+$dark-hover:                               rgba(0,0,0,0.1);
 
 // Panels
 
@@ -63,19 +74,19 @@ $panel-footer-padding:        				$content-padding-large;
 $panel-footer-bg:             			   #fcfcfc;
 $panel-default-heading-bg:    			   #fcfcfc;
 
-$panel-default-text:                        #333;
-$panel-default-border:                      #c7c8c8;
-$panel-default-bg:                          #f6f7f7;
+$panel-default-text:                       #333;
+$panel-default-border:                     #c7c8c8;
+$panel-default-bg:                         #f6f7f7;
 
-$panel-primary-text:                        #fff;
+$panel-primary-text:                       #fff;
 $panel-primary-border:                       $color-primary-4;
 $panel-primary-heading-bg:                   $brand-primary;
 
-$panel-success-text:          				#fff;
+$panel-success-text:          			   #fff;
 $panel-success-border:        				 $color-success-4;
 $panel-success-heading-bg:    				 $brand-success;
 
-$panel-info-text:             				#fff;
+$panel-info-text:             			   #fff;
 $panel-info-border:           				 $color-info-4;
 $panel-info-heading-bg:       				 $brand-info;
 
@@ -83,6 +94,14 @@ $panel-warning-text:          			   #fff;
 $panel-warning-border:        				 $color-warning-4;
 $panel-warning-heading-bg:    				 $brand-warning;
 
-$panel-danger-text:           				#fff;
+$panel-danger-text:           			   #fff;
 $panel-danger-border:         				 $color-danger-4;
 $panel-danger-heading-bg:     				 $brand-danger;
+
+// Sidebar
+
+$sidebar-bg:                                #181717;
+$sidebar-color:                             rgb( 195, 195, 197 );
+$sidebar-hover-color:                       #fff;
+$sidebar-base-width:                          250px;
+$sidebar-mini-width:                          (($content-padding-large * 2) + $icon-font-size);

@@ -1,0 +1,17 @@
+ /************************************************************************
+*
+* mixins.scss 
+* ----------------------------------------------------------------------
+* custom mixins for the template.
+*
+* Author: Humza Khan
+* Date: Apr 17, 2017.
+*
+*************************************************************************/
+ 
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);
+      -ms-transform: rotate($degrees); 
+       -o-transform: rotate($degrees);
+          transform: rotate($degrees);
+}

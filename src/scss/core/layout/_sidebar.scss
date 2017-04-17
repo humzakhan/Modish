@@ -1,0 +1,236 @@
+    /************************************************************************
+*
+* siderbar.scss 
+* ----------------------------------------------------------------------
+* Main sidebar's styling.
+*
+* Author: Humza Khan
+* Date: April 17, 2017.
+*
+*************************************************************************/
+
+.sidebar {
+    font-family: 'Raleway', sans-serif;
+    font-size: $font-size-base * 0.6;
+    display: none;
+    font-weight: 600;
+    position: relative;
+    background-color: $sidebar-bg;
+    color: $sidebar-color;
+
+    @media (min-width: $screen-size-md) {
+        display: table-cell;
+        vertical-align: top;
+        max-width: $sidebar-base-width;
+    }
+
+    &-default {
+        z-index: 99;
+        .navigation-header {
+            >i {
+                display: none;
+            }
+        }
+    }
+    
+    &-collapsed {
+
+        &.sidebar {
+            min-width: $sidebar-mini-width !important;
+        }
+
+        .sidebar-content {
+            >.navigation {
+                li {
+                    > .navigation-header {
+                        >span {
+                            display: none;
+                        }
+
+                        > i {
+                            display: block;
+                            left: 19px;
+                            position: absolute;
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    > a {
+                        text-align: center;
+                        padding-left: 0;
+                        padding-right: 0;
+                        display: block;
+                    }
+
+                    > i {
+                        margin: 2px 0;
+                        display: block;
+                        float: none;
+                    }
+
+                    > span {
+                        display: none;
+                    }
+
+                    &.has-ul:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .hidden-ul {
+            display: none;
+        }
+        .side
+        bar-content {
+            position: relative;
+        }
+    }
+
+    .navigation {
+        margin: 0;
+        padding: ($line-height-computed / 2) 0;
+        list-style: none;
+        position: relative;
+
+        .hidden-ul {
+            display: none;
+        }
+
+        > li {
+            position: relative;
+
+            +li {
+                margin-top: 1px;
+            }
+            
+            &.active {
+                background-color: $dark-hover;
+                border-left: 1px solid #fff;
+            }
+
+            > a {
+                display: block;
+                color: $sidebar-color;
+                font-size: ($icon-font-size + 1);
+                text-transform: uppercase;
+
+                &:focus,
+                &:hover {
+                    background-color: $dark-hover;
+                    color: $sidebar-hover-color;
+                    text-decoration: none;
+                }
+
+                > i {
+                    float: left;
+                    top: 0;
+                    margin-top: 2px;
+                    margin-right: $content-padding-base;
+                    font-size: $icon-font-size + 2;
+
+                    &.pull-right {
+                        margin-right: 0;
+                        margin-left: $content-padding-base;
+                    }
+                }
+            }
+
+            &.disabled {
+                > a {
+                    &,
+                    &:hover,
+                    &:focus {
+                        color: inherit;
+                        background-color: transparent;
+                        cursor: $cursor-disabled;
+                        opacity: 0.3;
+                    }
+                }
+            }
+
+            > .has-ul {
+                position: relative;
+                padding-right: ($content-padding-large + $icon-font-size); // Arrow icons
+
+                &:after {
+                    content: "\f107";
+                    display: inline-block;
+                    font: normal normal normal FontAwesome;
+                    font-size: inherit;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    font-size: $icon-font-size;
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -($icon-font-size / 2);
+                    right: $content-padding-large;
+                    line-height: 1;
+                    -moz-osx-font-smoothing: grayscale;
+                    @include rotate(0deg);
+                    @include transition(-webkit-transform 0.2s ease-in-out);
+                }
+            }
+
+            &.active>.has-ul:after {
+                @include rotate(90deg);
+            }
+        }
+
+        > li {
+
+            a {
+                padding: $sidebar-link-padding-vertical $sidebar-link-padding-horizontal;
+                min-height: ($line-height-computed + ($sidebar-link-padding-vertical * 2));
+            }
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                background-color: fade(#000, 15%);
+                width: $sidebar-base-width;
+                @include box-shadow(0 1px 0 fade(#fff, 5%));
+
+                li {
+                    a {
+                        padding: 10px $content-padding-large;
+                        padding-left: ($content-padding-large + $content-padding-base + $icon-font-size);
+                        min-height: ($line-height-computed + 20);
+                        font-size: $font-size-xs + 2;
+                        color: $sidebar-color;
+                    }
+
+                    &.active {
+                        border-left: none;
+                    }
+                }
+
+                .navigation-header {
+                    padding-left: ($content-padding-large + $content-padding-base + $icon-font-size);
+                }
+            }
+        }
+
+        .navigation-header {
+            padding: $content-padding-small $content-padding-large;
+            border-bottom: 0;
+            text-transform: uppercase;
+            font-size: $font-size-xs;
+            line-height: $line-height-small;
+            margin-top: 10px;
+            opacity: 0.7;
+            font-weight: 300;
+
+            > span {
+                display: block;
+                margin-top: ($font-size-base - $font-size-xs);
+                width: $sidebar-base-width;
+            }
+        }
+    }
+}

@@ -8,3 +8,241 @@
 * Date: Mar 28, 2017.
 *
 *************************************************************************/
+/************************************************************************
+*
+* variables.scss 
+* ----------------------------------------------------------------------
+* Sass Variables for the template.
+*
+* Author: Humza Khan
+* Date: Mar 28, 2017.
+*
+*************************************************************************/
+/************************************************************************
+*
+* colors.scss 
+* ----------------------------------------------------------------------
+* Color pallete for the template.
+*
+* Author: Humza Khan
+* Date: Mar 28, 2017.
+*
+*************************************************************************/
+/************************************************************************
+*
+* mixins.scss 
+* ----------------------------------------------------------------------
+* custom mixins for the template.
+*
+* Author: Humza Khan
+* Date: Apr 17, 2017.
+*
+*************************************************************************/
+/************************************************************************
+*
+* content.scss 
+* ----------------------------------------------------------------------
+* Content's basic layout of the web app
+*
+* Author: Humza Khan
+* Date: Mar 28, 2017.
+*
+*************************************************************************/
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.page-container {
+  position: relative; }
+  @media (min-width: 768px) {
+    .page-container {
+      display: table;
+      table-layout: fixed;
+      height: 100%; } }
+
+@-moz-document url-prefix() {
+  .page-container {
+    height: 1px; } }
+
+@media (min-width: 768px) {
+  .page-content {
+    display: table-row; } }
+
+.content {
+  padding: 1.33333 1.33333; }
+  .content:after {
+    content: '';
+    display: table;
+    clear: both; }
+  .page-header + .content {
+    padding-top: 0; }
+
+.content-wrapper {
+  padding-bottom: 1.33333;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .content-wrapper {
+      display: table-cell;
+      vertical-align: top; } }
+
+.content-group {
+  margin-bottom: 20px !important; }
+
+.content-group-sm {
+  margin-bottom: 15px !important; }
+
+.content-group-lg {
+  margin-bottom: 30px !important; }
+
+/************************************************************************
+*
+* siderbar.scss 
+* ----------------------------------------------------------------------
+* Main sidebar's styling.
+*
+* Author: Humza Khan
+* Date: April 17, 2017.
+*
+*************************************************************************/
+.sidebar {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.6rem;
+  display: none;
+  font-weight: 600;
+  position: relative;
+  background-color: #181717;
+  color: #c3c3c5; }
+  @media (min-width: 768px) {
+    .sidebar {
+      display: table-cell;
+      vertical-align: top;
+      max-width: 250px; } }
+  .sidebar-default {
+    z-index: 99; }
+    .sidebar-default .navigation-header > i {
+      display: none; }
+  .sidebar-collapsed.sidebar {
+    min-width: 53px !important; }
+  .sidebar-collapsed .sidebar-content > .navigation li > .navigation-header > span {
+    display: none; }
+  .sidebar-collapsed .sidebar-content > .navigation li > .navigation-header > i {
+    display: block;
+    left: 19px;
+    position: absolute; }
+    .sidebar-collapsed .sidebar-content > .navigation li > .navigation-header > i:hover {
+      cursor: pointer; }
+  .sidebar-collapsed .sidebar-content > .navigation li > a {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    display: block; }
+  .sidebar-collapsed .sidebar-content > .navigation li > i {
+    margin: 2px 0;
+    display: block;
+    float: none; }
+  .sidebar-collapsed .sidebar-content > .navigation li > span {
+    display: none; }
+  .sidebar-collapsed .sidebar-content > .navigation li.has-ul:after {
+    display: none; }
+  .sidebar-collapsed .hidden-ul {
+    display: none; }
+  .sidebar-collapsed .side
+bar-content {
+    position: relative; }
+  .sidebar .navigation {
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+    position: relative; }
+    .sidebar .navigation .hidden-ul {
+      display: none; }
+    .sidebar .navigation > li {
+      position: relative; }
+      .sidebar .navigation > li + li {
+        margin-top: 1px; }
+      .sidebar .navigation > li.active {
+        background-color: rgba(0, 0, 0, 0.1);
+        border-left: 1px solid #fff; }
+      .sidebar .navigation > li > a {
+        display: block;
+        color: #c3c3c5;
+        font-size: 14px;
+        text-transform: uppercase; }
+        .sidebar .navigation > li > a:focus, .sidebar .navigation > li > a:hover {
+          background-color: rgba(0, 0, 0, 0.1);
+          color: #fff;
+          text-decoration: none; }
+        .sidebar .navigation > li > a > i {
+          float: left;
+          top: 0;
+          margin-top: 2px;
+          margin-right: 15px;
+          font-size: 15px; }
+          .sidebar .navigation > li > a > i.pull-right {
+            margin-right: 0;
+            margin-left: 15px; }
+      .sidebar .navigation > li.disabled > a, .sidebar .navigation > li.disabled > a:hover, .sidebar .navigation > li.disabled > a:focus {
+        color: inherit;
+        background-color: transparent;
+        cursor: not-allowed;
+        opacity: 0.3; }
+      .sidebar .navigation > li > .has-ul {
+        position: relative;
+        padding-right: 33px; }
+        .sidebar .navigation > li > .has-ul:after {
+          content: "\f107";
+          display: inline-block;
+          font: normal normal normal FontAwesome;
+          font-size: inherit;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          font-size: 13px;
+          display: block;
+          position: absolute;
+          top: 50%;
+          margin-top: -6.5px;
+          right: 20px;
+          line-height: 1;
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+          transition: -webkit-transform 0.2s ease-in-out; }
+      .sidebar .navigation > li.active > .has-ul:after {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg); }
+    .sidebar .navigation > li a {
+      padding: 12px 20px;
+      min-height: 44px; }
+    .sidebar .navigation > li ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background-color: fade(#000, 15%);
+      width: 250px; }
+      .sidebar .navigation > li ul li a {
+        padding: 10px 20px;
+        padding-left: 48px;
+        min-height: 40px;
+        font-size: 2.75rem;
+        color: #c3c3c5; }
+      .sidebar .navigation > li ul li.active {
+        border-left: none; }
+      .sidebar .navigation > li ul .navigation-header {
+        padding-left: 48px; }
+    .sidebar .navigation .navigation-header {
+      padding: 10px 20px;
+      border-bottom: 0;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      line-height: 1.66667;
+      margin-top: 10px;
+      opacity: 0.7;
+      font-weight: 300; }
+      .sidebar .navigation .navigation-header > span {
+        display: block;
+        margin-top: 0.25rem;
+        width: 250px; }
