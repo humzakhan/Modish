@@ -162,8 +162,8 @@
   text-align: center;
   margin-top: -1px; }
   .caret:after {
-    content: '\e9c5';
-    font-family: 'icomoon';
+    content: '\f107';
+    font-family: 'FontAwesome';
     display: block;
     font-size: 13px;
     line-height: 1;
