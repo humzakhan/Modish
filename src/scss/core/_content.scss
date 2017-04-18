@@ -14,6 +14,11 @@ html, body {
     height: 100%;
 }
 
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: $font-size-base;
+}
+
 .page-container {
     position: relative;
 

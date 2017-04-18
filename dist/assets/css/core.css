@@ -38,3 +38,141 @@
 * Date: Apr 17, 2017.
 *
 *************************************************************************/
+/************************************************************************
+*
+* buttons.scss 
+* ----------------------------------------------------------------------
+* Custom buttons styling.
+*
+* Author: Humza Khan
+* Date: Apr 18, 2017.
+*
+*************************************************************************/
+.btn {
+  position: relative;
+  border-radius: 2px;
+  font-size: 0.875rem;
+  margin: 2px; }
+  .btn > i {
+    font-size: 12px; }
+  .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+    outline: 0; }
+  .btn::-moz-focus-inner {
+    border: 0; }
+  .btn:hover[class*=bg-]:hover, .btn:hover[class*=bg-]:active, .btn:hover[class*=bg-]:focus, .btn:focus[class*=bg-]:hover, .btn:focus[class*=bg-]:active, .btn:focus[class*=bg-]:focus, .btn.focus[class*=bg-]:hover, .btn.focus[class*=bg-]:active, .btn.focus[class*=bg-]:focus {
+    color: #fff; }
+
+/************************************************************************
+*
+* navbar.scss 
+* ----------------------------------------------------------------------
+* Custom navbar styling.
+*
+* Author: Humza Khan
+* Date: Apr 18, 2017.
+*
+*************************************************************************/
+.navbar {
+  margin-bottom: 0;
+  border-width: 1px 0;
+  padding: 0;
+  background-color: #181717;
+  color: #c3c3c5;
+  padding-right: 20px; }
+  .navbar > .navbar-brand {
+    padding: 10.8px 18px;
+    text-align: left;
+    color: #c3c3c5; }
+    @media (min-width: 768px) {
+      .navbar > .navbar-brand {
+        min-width: 250px; } }
+    .navbar > .navbar-brand:hover, .navbar > .navbar-brand:focus, .navbar > .navbar-brand:active {
+      text-decoration: none; }
+  .navbar .nav-link {
+    color: #c3c3c5; }
+  .navbar .dropdown-menu {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 0;
+    margin-top: 5px; }
+  .navbar .navbar-nav .badge {
+    position: absolute;
+    top: 2px;
+    right: 33px;
+    background-color: red;
+    border-radius: 50%; }
+
+.navbar-toggler {
+  margin: 10.8px 18px; }
+
+/************************************************************************
+*
+* dropdown.scss 
+* ----------------------------------------------------------------------
+* Custom dropdown styling.
+*
+* Author: Humza Khan
+* Date: Apr 18, 2017.
+*
+*************************************************************************/
+.dropdown-menu {
+  padding: 5px 0;
+  color: #333; }
+  .dropdown-menu[class*=bg-] > li > a {
+    color: inherit; }
+    .dropdown-menu[class*=bg-] > li > a:hover {
+      background-color: rgba(0, 0, 0, 0.1); }
+  .dropdown-menu[class*=bg-] > li.active > a {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: inherit; }
+  .dropdown-menu > li {
+    position: relative;
+    margin-bottom: 1px; }
+    .dropdown-menu > li:last-child {
+      margin-bottom: 0; }
+    .dropdown-menu > li.active > a {
+      background-color: #0E74AF;
+      color: #fff; }
+  .dropdown-menu .dropdown-item {
+    padding: 8px 15px;
+    font-size: 0.875rem; }
+    .dropdown-menu .dropdown-item > i,
+    .dropdown-menu .dropdown-item > img {
+      margin-right: 10px; }
+      .dropdown-menu .dropdown-item > i.pull-right,
+      .dropdown-menu .dropdown-item > img.pull-right {
+        margin-right: 0;
+        margin-left: 10px;
+        margin-top: 4.5px; }
+
+.dropdown-hover > li > a:hover, .dropdown-hover > li > a:focus {
+  background-color: #0E74AF;
+  color: #fff; }
+
+.dropdown-hover[class*=bg-] > li > a:hover {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.caret {
+  font-style: normal;
+  font-weight: normal;
+  border: 0;
+  margin: 0;
+  width: auto;
+  height: auto;
+  text-align: center;
+  margin-top: -1px; }
+  .caret:after {
+    content: '\e9c5';
+    font-family: 'icomoon';
+    display: block;
+    font-size: 13px;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+
+.dropdown-demo {
+  display: block;
+  position: static;
+  width: 100%;
+  margin-top: 0;
+  float: none; }

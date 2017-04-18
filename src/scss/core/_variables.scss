@@ -20,6 +20,7 @@ $font-size-lg:                              19px !default;
 $font-size-sm:                              14px !default;
 $font-size-xs:                              11px !default;
 $icon-font-size:                            13px !default;
+$text-color:                                #333;
 
 // Paddings
 
@@ -47,6 +48,15 @@ $sidebar-link-padding-horizontal:           $content-padding-large;
 $line-height-large:         				1.4285715;
 $line-height-small:         				1.6666667;
 $line-height-computed:    					20px; // ~20px
+
+// List Spacing
+$list-spacing:                              5px;
+
+// Border Radius
+
+$border-radius-base:                        3px;
+$border-radius-large:                       5px;
+$border-radius-small:                       2px;
 
 // Screen sizes
 

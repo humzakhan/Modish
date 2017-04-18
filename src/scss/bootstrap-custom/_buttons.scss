@@ -1,0 +1,52 @@
+/************************************************************************
+*
+* buttons.scss 
+* ----------------------------------------------------------------------
+* Custom buttons styling.
+*
+* Author: Humza Khan
+* Date: Apr 18, 2017.
+*
+*************************************************************************/
+
+.btn {
+    position: relative;
+    border-radius: $border-radius-small;
+    font-size: $font-size-sm;
+    margin: 2px;
+
+    > i {
+      font-size: 12px;
+    }
+
+    &,
+    &:active,
+    &.active {
+        &:focus,
+        &.focus {
+            outline: 0;
+        }
+    }
+
+    &::-moz-focus-inner {
+        border: 0;
+    }
+
+    &:hover,
+    &:focus,
+    &.focus {
+        @include box-shadow(0 0 0 100px fade(#000, 5%) inset);
+
+    // Active state
+    &:active,
+    &.active {
+        @include box-shadow(0 0 0 100px fade(#000, 10%) inset);
+    }
+
+    &[class*=bg-]:hover,
+    &[class*=bg-]:active,
+    &[class*=bg-]:focus {
+      color: #fff;
+    }
+  }
+}

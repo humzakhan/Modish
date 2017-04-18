@@ -1,0 +1,60 @@
+/************************************************************************
+*
+* navbar.scss 
+* ----------------------------------------------------------------------
+* Custom navbar styling.
+*
+* Author: Humza Khan
+* Date: Apr 18, 2017.
+*
+*************************************************************************/
+
+.navbar {
+    margin-bottom: 0;
+    border-width: 1px 0;
+    padding: 0;
+    background-color: $sidebar-bg;
+    color: $sidebar-color;
+    padding-right: $content-padding-large;
+
+    > .navbar-brand {
+        padding: ($padding-large-vertical * 1.2) ($padding-large-horizontal * 1.2);
+        text-align: left;
+        color: $sidebar-color;
+
+        @media (min-width: $screen-size-md) {
+            min-width: $sidebar-base-width;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+        }
+    }
+
+    .nav-link {
+        color: $sidebar-color;
+    }
+
+    .dropdown-menu {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        border-radius: 0;
+        margin-top: 5px;
+    }
+
+    .navbar-nav {
+        .badge {
+            position: absolute;
+            top: 2px;
+            right: 33px;
+            background-color: red;
+            border-radius: 50%;
+        }
+    }
+}
+
+.navbar-toggler {
+    margin: ($padding-large-vertical * 1.2) ($padding-large-horizontal * 1.2);
+}
