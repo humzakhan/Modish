@@ -94,7 +94,7 @@
     box-shadow: none;
     -webkit-box-shadow: none;
     border-radius: 0;
-    margin-top: 5px; }
+    margin-top: 6px; }
   .navbar .navbar-nav .badge {
     position: absolute;
     top: 2px;
@@ -135,7 +135,10 @@
       color: #fff; }
   .dropdown-menu .dropdown-item {
     padding: 8px 15px;
-    font-size: 0.688rem; }
+    font-size: 0.875rem; }
+    .dropdown-menu .dropdown-item > span {
+      position: absolute;
+      left: 36px; }
     .dropdown-menu .dropdown-item > i,
     .dropdown-menu .dropdown-item > img {
       margin-right: 10px; }

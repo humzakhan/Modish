@@ -50,7 +50,12 @@
 
     .dropdown-item {
         padding: ($padding-base-vertical + 1) $content-padding-base;
-        font-size: $font-size-sm;
+        font-size: $font-size-base;
+
+        > span {
+          position: absolute;
+          left: 36px;
+        }
 
         > i,
         > img {
