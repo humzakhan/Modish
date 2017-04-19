@@ -20,6 +20,15 @@ gulp.task('build:sass', function() {
         .pipe(gulp.dest('dist/assets/css'));
 });
 
-gulp.task('build', ['build:sass']);
+gulp.task('build:js', function() {
+    return gulp.src('src/js/*.js')
+        .pipe(uglify().on('error', util.log))
+        .pipe(rename({
+            suffix: ".min"
+        }))
+        .pipe(gulp.dest('dist/assets/js'));
+});
+
+gulp.task('build', ['build:sass', 'build:js']);
 
 gulp.task('default', ['build:sass', 'watch:sass']);

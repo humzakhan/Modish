@@ -11,7 +11,7 @@
 
 .sidebar {
     font-family: 'Raleway', sans-serif;
-    font-size: $font-size-base * 0.6;
+    font-size: $font-size-base * 0.4;
     display: none;
     font-weight: 600;
     position: relative;
@@ -43,7 +43,7 @@
             >.navigation {
                 li {
                     > .navigation-header {
-                        >span {
+                        > span {
                             display: none;
                         }
 
@@ -109,13 +109,13 @@
             
             &.active {
                 background-color: $dark-hover;
-                border-left: 1px solid #fff;
+                //border-left: 1px solid #fff;
             }
 
             > a {
                 display: block;
                 color: $sidebar-color;
-                font-size: ($icon-font-size + 1);
+                font-size: ($icon-font-size);
                 text-transform: uppercase;
 
                 &:focus,
@@ -159,10 +159,10 @@
                 &:after {
                     content: "\f107";
                     display: inline-block;
-                    font: normal normal normal FontAwesome;
-                    font-size: inherit;
+                    font: normal normal normal 14px/1 FontAwesome;
                     text-rendering: auto;
                     -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
                     font-size: $icon-font-size;
                     display: block;
                     position: absolute;
@@ -170,7 +170,6 @@
                     margin-top: -($icon-font-size / 2);
                     right: $content-padding-large;
                     line-height: 1;
-                    -moz-osx-font-smoothing: grayscale;
                     @include rotate(0deg);
                     @include transition(-webkit-transform 0.2s ease-in-out);
                 }
@@ -197,12 +196,27 @@
                 @include box-shadow(0 1px 0 fade(#fff, 5%));
 
                 li {
+                    background-color: #232323;
+                    padding: 10px $content-padding-large;
+
+                    &:hover,
+                    &:active {
+                        background-color: lighten($dark-hover, 40%);
+                    }
+
                     a {
-                        padding: 10px $content-padding-large;
-                        padding-left: ($content-padding-large + $content-padding-base + $icon-font-size);
+                        padding-left: ($content-padding-base + $icon-font-size) * 1.4;
                         min-height: ($line-height-computed + 20);
-                        font-size: $font-size-xs + 2;
+                        font-size: $font-size-sm * 1.2;
                         color: $sidebar-color;
+
+                        &:hover,
+                        &:visited,
+                        &:active,
+                        &:focus {
+                            text-decoration: none;
+                            color: #fff;
+                        }
                     }
 
                     &.active {

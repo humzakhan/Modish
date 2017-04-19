@@ -111,7 +111,7 @@ body {
 *************************************************************************/
 .sidebar {
   font-family: 'Raleway', sans-serif;
-  font-size: 0.525rem;
+  font-size: 0.35rem;
   display: none;
   font-weight: 600;
   position: relative;
@@ -166,12 +166,11 @@ bar-content {
       .sidebar .navigation > li + li {
         margin-top: 1px; }
       .sidebar .navigation > li.active {
-        background-color: rgba(0, 0, 0, 0.1);
-        border-left: 1px solid #fff; }
+        background-color: rgba(0, 0, 0, 0.1); }
       .sidebar .navigation > li > a {
         display: block;
         color: #c3c3c5;
-        font-size: 14px;
+        font-size: 13px;
         text-transform: uppercase; }
         .sidebar .navigation > li > a:focus, .sidebar .navigation > li > a:hover {
           background-color: rgba(0, 0, 0, 0.1);
@@ -197,10 +196,10 @@ bar-content {
         .sidebar .navigation > li > .has-ul:after {
           content: "\f107";
           display: inline-block;
-          font: normal normal normal FontAwesome;
-          font-size: inherit;
+          font: normal normal normal 14px/1 FontAwesome;
           text-rendering: auto;
           -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
           font-size: 13px;
           display: block;
           position: absolute;
@@ -208,7 +207,6 @@ bar-content {
           margin-top: -6.5px;
           right: 20px;
           line-height: 1;
-          -moz-osx-font-smoothing: grayscale;
           -webkit-transform: rotate(0deg);
           -ms-transform: rotate(0deg);
           -o-transform: rotate(0deg);
@@ -228,14 +226,21 @@ bar-content {
       padding: 0;
       background-color: fade(#000, 15%);
       width: 250px; }
-      .sidebar .navigation > li ul li a {
-        padding: 10px 20px;
-        padding-left: 48px;
-        min-height: 40px;
-        font-size: 2.563rem;
-        color: #c3c3c5; }
-      .sidebar .navigation > li ul li.active {
-        border-left: none; }
+      .sidebar .navigation > li ul li {
+        background-color: #232323;
+        padding: 10px 20px; }
+        .sidebar .navigation > li ul li:hover, .sidebar .navigation > li ul li:active {
+          background-color: rgba(102, 102, 102, 0.1); }
+        .sidebar .navigation > li ul li a {
+          padding-left: 39.2px;
+          min-height: 40px;
+          font-size: 0.8256rem;
+          color: #c3c3c5; }
+          .sidebar .navigation > li ul li a:hover, .sidebar .navigation > li ul li a:visited, .sidebar .navigation > li ul li a:active, .sidebar .navigation > li ul li a:focus {
+            text-decoration: none;
+            color: #fff; }
+        .sidebar .navigation > li ul li.active {
+          border-left: none; }
       .sidebar .navigation > li ul .navigation-header {
         padding-left: 48px; }
     .sidebar .navigation .navigation-header {
