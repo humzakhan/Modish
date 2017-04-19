@@ -13,14 +13,17 @@
 
 // Fonts
 
-$font-family-base:                         'Lato', sans-serif !default;
+$font-family-base:                         'Lato', sans-serif;
 
-$font-size-base:                            16px !default; // Assumes the browser default, typically `16px`
-$font-size-lg:                              19px !default;
-$font-size-sm:                              14px !default;
-$font-size-xs:                              11px !default;
-$icon-font-size:                            13px !default;
+$font-size-base:                            0.875rem; 
+$font-size-lg:                              1.118rem;
+$font-size-sm:                              0.688rem;
+$font-size-xs:                              0.563rem;
+$icon-font-size:                            13px;
 $text-color:                                #333;
+
+$body-bg:               				    #e2e5ee;
+$link-color:            				    #1E88E5;
 
 // Paddings
 

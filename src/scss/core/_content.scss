@@ -15,8 +15,9 @@ html, body {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    font-size: $font-size-base;
+    font-family: $font-family-base;
+    font-size: $font-size-base !important;
+    background-color: $body-bg;
 }
 
 .page-container {
@@ -42,7 +43,7 @@ body {
 }
 
 .content {
-    padding: $line-height-lg $line-height-lg;
+    padding: $content-padding-large $content-padding-large;
 
     &:after {
         content: '';

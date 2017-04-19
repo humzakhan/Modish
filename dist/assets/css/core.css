@@ -51,7 +51,7 @@
 .btn {
   position: relative;
   border-radius: 2px;
-  font-size: 0.875rem;
+  font-size: 0.688rem;
   margin: 2px; }
   .btn > i {
     font-size: 12px; }
@@ -135,7 +135,7 @@
       color: #fff; }
   .dropdown-menu .dropdown-item {
     padding: 8px 15px;
-    font-size: 0.875rem; }
+    font-size: 0.688rem; }
     .dropdown-menu .dropdown-item > i,
     .dropdown-menu .dropdown-item > img {
       margin-right: 10px; }
@@ -176,3 +176,22 @@
   width: 100%;
   margin-top: 0;
   float: none; }
+
+/************************************************************************
+*
+* card.scss 
+* ----------------------------------------------------------------------
+* Custom cards styling.
+*
+* Author: Humza Khan
+* Date: Apr 19, 2017.
+*
+*************************************************************************/
+.card {
+  margin-bottom: 20px;
+  border-color: #c7c8c8;
+  color: #333;
+  border-radius: 0; }
+
+.card-title {
+  margin-bottom: 20px; }

@@ -1,0 +1,21 @@
+/************************************************************************
+*
+* card.scss 
+* ----------------------------------------------------------------------
+* Custom cards styling.
+*
+* Author: Humza Khan
+* Date: Apr 19, 2017.
+*
+*************************************************************************/
+
+.card {
+    margin-bottom: $line-height-computed;
+    border-color: $panel-default-border;
+    color: $text-color;
+    border-radius: 0;
+}
+
+.card-title {
+    margin-bottom: $content-padding-large;
+}

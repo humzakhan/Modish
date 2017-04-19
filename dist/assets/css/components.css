@@ -53,8 +53,9 @@ html, body {
   height: 100%; }
 
 body {
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem; }
+  font-family: "Lato", sans-serif;
+  font-size: 0.875rem !important;
+  background-color: #e2e5ee; }
 
 .page-container {
   position: relative; }
@@ -73,7 +74,7 @@ body {
     display: table-row; } }
 
 .content {
-  padding: 1.33333 1.33333; }
+  padding: 20px 20px; }
   .content:after {
     content: '';
     display: table;
@@ -110,7 +111,7 @@ body {
 *************************************************************************/
 .sidebar {
   font-family: 'Raleway', sans-serif;
-  font-size: 0.6rem;
+  font-size: 0.525rem;
   display: none;
   font-weight: 600;
   position: relative;
@@ -231,7 +232,7 @@ bar-content {
         padding: 10px 20px;
         padding-left: 48px;
         min-height: 40px;
-        font-size: 2.75rem;
+        font-size: 2.563rem;
         color: #c3c3c5; }
       .sidebar .navigation > li ul li.active {
         border-left: none; }
@@ -241,12 +242,12 @@ bar-content {
       padding: 10px 20px;
       border-bottom: 0;
       text-transform: uppercase;
-      font-size: 0.75rem;
+      font-size: 0.563rem;
       line-height: 1.66667;
       margin-top: 10px;
       opacity: 0.7;
       font-weight: 300; }
       .sidebar .navigation .navigation-header > span {
         display: block;
-        margin-top: 0.25rem;
+        margin-top: 0.312rem;
         width: 250px; }

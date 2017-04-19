@@ -9,14 +9,14 @@
 *
 *************************************************************************/
 
+// Core Variable overrides
+@import "core/variables";
+@import "core/mixins";
+
 // Core variables and mixins
 @import "../../bower_components/bootstrap/scss/variables";
 @import "../../bower_components/bootstrap/scss/mixins";
 @import "../../bower_components/bootstrap/scss/custom";
-
-// Core Variable overrides
-@import "core/variables";
-@import "core/mixins";
 
 // Layout
 @import "core/content";
