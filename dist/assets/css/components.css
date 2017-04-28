@@ -256,3 +256,55 @@ bar-content {
         display: block;
         margin-top: 0.312rem;
         width: 250px; }
+
+/************************************************************************
+*
+* helpers.scss 
+* ----------------------------------------------------------------------
+* Helper items
+*
+* Author: Humza Khan
+* Date: Apr 28, 2017.
+*
+*************************************************************************/
+.width-350 {
+  width: 350px; }
+
+.width-300 {
+  width: 300px; }
+
+/************************************************************************
+*
+* notifications.scss 
+* ----------------------------------------------------------------------
+* Notification styling goes here.
+*
+* Author: Humza Khan
+* Date: Apr 28, 2017.
+*
+*************************************************************************/
+.list-notifications {
+  overflow: auto; }
+  .list-notifications > .media {
+    padding: 10.5px 12px;
+    border-top: 1px solid #e7e7e7; }
+    .list-notifications > .media:hover {
+      cursor: pointer;
+      background-color: #f7f7f7; }
+    .list-notifications > .media:nth-child(1) {
+      border-top: none; }
+    .list-notifications > .media > .notif-icon {
+      background-color: #0E74AF;
+      color: #fff;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      line-height: 25px;
+      text-align: center;
+      vertical-align: middle;
+      display: inline-block; }
+      .list-notifications > .media > .notif-icon[class*="bg-"] {
+        background-color: inherit; }
+    .list-notifications > .media > .notif-text {
+      position: absolute;
+      left: 15%; }

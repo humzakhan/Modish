@@ -1,0 +1,49 @@
+/************************************************************************
+*
+* notifications.scss 
+* ----------------------------------------------------------------------
+* Notification styling goes here.
+*
+* Author: Humza Khan
+* Date: Apr 28, 2017.
+*
+*************************************************************************/
+
+.list-notifications {
+    overflow: auto;
+
+   > .media {
+       padding: ($padding-base-vertical * 1.5) $padding-base-horizontal;
+       border-top: 1px solid #e7e7e7;
+
+       &:hover {
+           cursor: pointer;
+           background-color: #f7f7f7;
+       }
+
+       &:nth-child(1) {
+           border-top: none;
+       }
+
+        > .notif-icon {
+            background-color: $color-primary-4;
+            color: #fff;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            line-height: 25px;
+            text-align: center;
+            vertical-align: middle;
+            display: inline-block;
+
+            &[class*="bg-"] {
+                background-color: inherit;
+            }
+        }
+
+        > .notif-text {
+            position: absolute;
+            left: 15%;
+        }
+   }
+}
