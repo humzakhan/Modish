@@ -303,7 +303,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: #292b2c;
-  background-color: #e2e5ee; }
+  background-color: #f7f7f7; }
 
 [tabindex="-1"]:focus {
   outline: none !important; }
@@ -567,7 +567,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #e2e5ee;
+  background-color: #f7f7f7;
   border: 1px solid #ddd;
   border-radius: 0.25rem;
   transition: all 0.2s ease-in-out;
@@ -1412,7 +1412,7 @@ pre {
   .table tbody + tbody {
     border-top: 2px solid #eceeef; }
   .table .table {
-    background-color: #e2e5ee; }
+    background-color: #f7f7f7; }
 
 .table-sm th,
 .table-sm td {
@@ -1489,7 +1489,7 @@ pre {
     background-color: #ebcccc; }
 
 .thead-inverse th {
-  color: #e2e5ee;
+  color: #f7f7f7;
   background-color: #292b2c; }
 
 .thead-default th {
@@ -1497,12 +1497,12 @@ pre {
   background-color: #eceeef; }
 
 .table-inverse {
-  color: #e2e5ee;
+  color: #f7f7f7;
   background-color: #292b2c; }
   .table-inverse th,
   .table-inverse td,
   .table-inverse thead th {
-    border-color: #e2e5ee; }
+    border-color: #f7f7f7; }
   .table-inverse.table-bordered {
     border: 0; }
 
@@ -2456,7 +2456,7 @@ tbody.collapse.show {
     color: #fff;
     background-color: #0E74AF; }
   .custom-control-input:focus ~ .custom-control-indicator {
-    box-shadow: 0 0 0 1px #e2e5ee, 0 0 0 3px #0E74AF; }
+    box-shadow: 0 0 0 1px #f7f7f7, 0 0 0 3px #0E74AF; }
   .custom-control-input:active ~ .custom-control-indicator {
     color: #fff;
     background-color: #7bc8f4; }
@@ -2619,8 +2619,8 @@ tbody.collapse.show {
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
     color: #464a4c;
-    background-color: #e2e5ee;
-    border-color: #ddd #ddd #e2e5ee; }
+    background-color: #f7f7f7;
+    border-color: #ddd #ddd #f7f7f7; }
   .nav-tabs .dropdown-menu {
     margin-top: -1px;
     border-top-right-radius: 0;
@@ -4046,7 +4046,7 @@ button.close {
   vertical-align: text-top !important; }
 
 .bg-faded {
-  background-color: #d8dce8; }
+  background-color: #efefef; }
 
 .bg-primary {
   background-color: #0E74AF !important; }
