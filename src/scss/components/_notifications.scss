@@ -10,40 +10,53 @@
 *************************************************************************/
 
 .list-notifications {
-    overflow: auto;
+   > ul {
+        overflow: auto;
 
-   > .media {
-       padding: ($padding-base-vertical * 1.5) $padding-base-horizontal;
-       border-top: 1px solid #e7e7e7;
+    > .media {
+        padding: ($padding-base-vertical * 1.5) $padding-base-horizontal;
+        border-top: 1px solid #e7e7e7;
 
-       &:hover {
-           cursor: pointer;
-           background-color: #f7f7f7;
-       }
+        &:hover {
+            cursor: pointer;
+            background-color: #f7f7f7;
+        }
 
-       &:nth-child(1) {
-           border-top: none;
-       }
+        &:nth-child(1) {
+            border-top: none;
+        }
 
-        > .notif-icon {
-            background-color: $color-primary-4;
-            color: #fff;
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            line-height: 25px;
-            text-align: center;
-            vertical-align: middle;
-            display: inline-block;
+        &.notif-unread {
+                text-align: center;
+                font-size: $font-size-sm;
+                padding: 4px;
+                float: center;
+                display: block;
+                text-transform: uppercase;
+                font-weight: 600;
+                background-color: #4678e1;
+                color: #fff;
+        }
 
-            &[class*="bg-"] {
-                background-color: inherit;
+            > .notif-icon {
+                color: #fff;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                line-height: 25px;
+                text-align: center;
+                vertical-align: middle;
+                display: inline-block;
+            }
+
+            > .notif-text {
+                position: absolute;
+                left: 15%;
             }
         }
+   }
 
-        > .notif-text {
-            position: absolute;
-            left: 15%;
-        }
+   &.dropdown-menu {
+       padding: 0;
    }
 }

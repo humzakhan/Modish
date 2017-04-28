@@ -10,6 +10,176 @@
 *************************************************************************/
 /************************************************************************
 *
+* colors.scss 
+* ----------------------------------------------------------------------
+* Color pallete for the template.
+*
+* Author: Humza Khan
+* Date: Mar 28, 2017.
+*
+*************************************************************************/
+/************************************************************************
+*
+* palette.scss 
+* ----------------------------------------------------------------------
+* Color pallete for the template.
+*
+* Author: Humza Khan
+* Date: Apr 28, 2017.
+*
+*************************************************************************/
+.text-primary-1 {
+  color: #65A6CC; }
+
+.text-primary-2 {
+  color: #398DBD; }
+
+.text-primary-3 {
+  color: #2380B6; }
+
+.text-primary-4 {
+  color: #0E74AF; }
+
+.text-primary-5 {
+  color: #0D6AA0; }
+
+.text-danger-1 {
+  color: #FF9C9C; }
+
+.text-danger-2 {
+  color: #FF7474; }
+
+.text-danger-3 {
+  color: #FF4D4D; }
+
+.text-danger-4 {
+  color: #FF3939; }
+
+.text-danger-5 {
+  color: #FF2626; }
+
+.text-success-1 {
+  color: #8EBE86; }
+
+.text-success-2 {
+  color: #69A95E; }
+
+.text-success-3 {
+  color: #569E4A; }
+
+.text-success-4 {
+  color: #3C7D30; }
+
+.text-success-5 {
+  color: #2D7D1F; }
+
+.text-warning-1 {
+  color: #FAB68E; }
+
+.text-warning-2 {
+  color: #F99E69; }
+
+.text-warning-3 {
+  color: #F89256; }
+
+.text-warning-4 {
+  color: #F78643; }
+
+.text-warning-5 {
+  color: #F77A31; }
+
+.text-info-1 {
+  color: #89AEB3; }
+
+.text-info-2 {
+  color: #67979E; }
+
+.text-info-3 {
+  color: #468189; }
+
+.text-info-4 {
+  color: #40767D; }
+
+.text-info-5 {
+  color: #3A6A71; }
+
+.bg-primary-1 {
+  background-color: #65A6CC; }
+
+.bg-primary-2 {
+  background-color: #398DBD; }
+
+.bg-primary-3 {
+  background-color: #2380B6; }
+
+.bg-primary-4 {
+  background-color: #0E74AF; }
+
+.bg-primary-5 {
+  background-color: #0D6AA0; }
+
+.bg-success-1 {
+  background-color: #8EBE86; }
+
+.bg-success-2 {
+  background-color: #69A95E; }
+
+.bg-success-3 {
+  background-color: #569E4A; }
+
+.bg-success-4 {
+  background-color: #3C7D30; }
+
+.bg-success-5 {
+  background-color: #2D7D1F; }
+
+.bg-danger-1 {
+  background-color: #FF9C9C; }
+
+.bg-danger-2 {
+  background-color: #FF7474; }
+
+.bg-danger-3 {
+  background-color: #FF4D4D; }
+
+.bg-danger-4 {
+  background-color: #FF3939; }
+
+.bg-danger-5 {
+  background-color: #FF2626; }
+
+.bg-warning-1 {
+  background-color: #FAB68E; }
+
+.bg-warning-2 {
+  background-color: #F99E69; }
+
+.bg-warning-3 {
+  background-color: #F89256; }
+
+.bg-warning-4 {
+  background-color: #F78643; }
+
+.bg-warning-5 {
+  background-color: #F77A31; }
+
+.bg-info-1 {
+  background-color: #89AEB3; }
+
+.bg-info-2 {
+  background-color: #67979E; }
+
+.bg-info-3 {
+  background-color: #468189; }
+
+.bg-info-4 {
+  background-color: #40767D; }
+
+.bg-info-5 {
+  background-color: #3A6A71; }
+
+/************************************************************************
+*
 * variables.scss 
 * ----------------------------------------------------------------------
 * Sass Variables for the template.

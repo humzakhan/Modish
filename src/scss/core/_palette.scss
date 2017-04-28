@@ -1,0 +1,236 @@
+/************************************************************************
+*
+* palette.scss 
+* ----------------------------------------------------------------------
+* Color pallete for the template.
+*
+* Author: Humza Khan
+* Date: Apr 28, 2017.
+*
+*************************************************************************/
+
+.text {
+
+    // Primary 
+
+    &-primary-1 {
+        color: $color-primary-1;
+    }
+
+    &-primary-2 {
+        color: $color-primary-2;
+    }
+
+    &-primary-3 {
+        color: $color-primary-3;
+    }
+
+    &-primary-4 {
+        color: $color-primary-4;
+    }
+
+    &-primary-5 {
+        color: $color-primary-5;
+    }
+
+    // Danger 
+
+    &-danger-1 {
+        color: $color-danger-1;
+    }
+
+    &-danger-2 {
+        color: $color-danger-2;
+    }
+
+    &-danger-3 {
+        color: $color-danger-3;
+    }
+
+     &-danger-4 {
+        color: $color-danger-4;
+    }
+
+     &-danger-5 {
+        color: $color-danger-5;
+    }
+
+    // Success
+
+     &-success-1 {
+        color: $color-success-1;
+    }
+
+    &-success-2 {
+        color: $color-success-2;
+    }
+
+    &-success-3 {
+        color: $color-success-3;
+    }
+
+    &-success-4 {
+        color: $color-success-4;
+    }
+
+    &-success-5 {
+        color: $color-success-5;
+    }
+
+    // Warning
+
+    &-warning-1 {
+        color: $color-warning-1;
+    }
+
+    &-warning-2 {
+        color: $color-warning-2;
+    }
+
+    &-warning-3 {
+        color: $color-warning-3;
+    }
+
+    &-warning-4 {
+        color: $color-warning-4;
+    }
+
+     &-warning-5 {
+        color: $color-warning-5;
+    }
+
+    // Info
+
+    &-info-1 {
+        color: $color-info-1;
+    }
+
+    &-info-2 {
+        color: $color-info-2;
+    }
+
+     &-info-3 {
+        color: $color-info-3;
+    }
+
+    &-info-4 {
+        color: $color-info-4;
+    }
+
+     &-info-5 {
+        color: $color-info-5;
+    }
+}
+
+.bg {
+
+    // Primary
+
+    &-primary-1 {
+        background-color: $color-primary-1;
+    }
+
+    &-primary-2 {
+        background-color: $color-primary-2;
+    }
+
+    &-primary-3 {
+        background-color: $color-primary-3;
+    }
+
+    &-primary-4 {
+        background-color: $color-primary-4;
+    }
+
+    &-primary-5 {
+        background-color: $color-primary-5;
+    }
+
+    // Success
+
+    &-success-1 {
+        background-color: $color-success-1;
+    }
+
+    &-success-2 {
+        background-color: $color-success-2;
+    }
+
+    &-success-3 {
+        background-color: $color-success-3;
+    }
+
+    &-success-4 {
+        background-color: $color-success-4;
+    }
+
+    &-success-5 {
+        background-color: $color-success-5;
+    }
+
+    // Danger 
+
+    &-danger-1 {
+        background-color: $color-danger-1;
+    }
+
+    &-danger-2 {
+        background-color: $color-danger-2;
+    }
+
+    &-danger-3 {
+        background-color: $color-danger-3;
+    }
+
+    &-danger-4 {
+        background-color: $color-danger-4;
+    }
+
+    &-danger-5 {
+        background-color: $color-danger-5;
+    }
+
+    // Warning
+
+    &-warning-1 {
+        background-color: $color-warning-1;
+    }
+
+    &-warning-2 {
+        background-color: $color-warning-2;
+    }
+
+    &-warning-3 {
+        background-color: $color-warning-3;
+    }
+
+    &-warning-4 {
+        background-color: $color-warning-4;
+    }
+
+    &-warning-5 {
+        background-color: $color-warning-5;
+    }
+
+    // Info
+
+    &-info-1 {
+        background-color: $color-info-1;
+    }
+
+    &-info-2 {
+        background-color: $color-info-2;
+    }
+
+    &-info-3 {
+        background-color: $color-info-3;
+    }
+
+    &-info-4 {
+        background-color: $color-info-4;
+    }
+
+    &-info-5 {
+        background-color: $color-info-5;
+    }
+}

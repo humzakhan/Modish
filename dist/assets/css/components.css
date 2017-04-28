@@ -283,18 +283,27 @@ bar-content {
 * Date: Apr 28, 2017.
 *
 *************************************************************************/
-.list-notifications {
+.list-notifications > ul {
   overflow: auto; }
-  .list-notifications > .media {
+  .list-notifications > ul > .media {
     padding: 10.5px 12px;
     border-top: 1px solid #e7e7e7; }
-    .list-notifications > .media:hover {
+    .list-notifications > ul > .media:hover {
       cursor: pointer;
       background-color: #f7f7f7; }
-    .list-notifications > .media:nth-child(1) {
+    .list-notifications > ul > .media:nth-child(1) {
       border-top: none; }
-    .list-notifications > .media > .notif-icon {
-      background-color: #0E74AF;
+    .list-notifications > ul > .media.notif-unread {
+      text-align: center;
+      font-size: 0.688rem;
+      padding: 4px;
+      float: center;
+      display: block;
+      text-transform: uppercase;
+      font-weight: 600;
+      background-color: #4678e1;
+      color: #fff; }
+    .list-notifications > ul > .media > .notif-icon {
       color: #fff;
       width: 25px;
       height: 25px;
@@ -303,8 +312,9 @@ bar-content {
       text-align: center;
       vertical-align: middle;
       display: inline-block; }
-      .list-notifications > .media > .notif-icon[class*="bg-"] {
-        background-color: inherit; }
-    .list-notifications > .media > .notif-text {
+    .list-notifications > ul > .media > .notif-text {
       position: absolute;
       left: 15%; }
+
+.list-notifications.dropdown-menu {
+  padding: 0; }
