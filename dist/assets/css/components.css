@@ -273,6 +273,22 @@ bar-content {
 .width-300 {
   width: 300px; }
 
+legend {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  padding: 10px 10px;
+  border-bottom: 1px solid #c7c8c8;
+  padding-left: 0; }
+
+.text-bold {
+  font-weight: 800; }
+
+.text-semibold {
+  font-weight: 400; }
+
+.text-light {
+  font-weight: 300; }
+
 /************************************************************************
 *
 * notifications.scss 

@@ -9,10 +9,33 @@
 *
 *************************************************************************/
 
+// Widths
 .width-350 {
     width: 350px;
 }
 
 .width-300 {
     width: 300px;
+}
+
+// Legend
+legend {
+    text-transform: uppercase;
+    font-size: $font-size-base;
+    padding: $content-padding-small $content-padding-small;
+    border-bottom: 1px solid $panel-default-border;
+    padding-left: 0;
+}
+
+// Typography
+.text-bold {
+    font-weight: 800;
+}
+
+.text-semibold {
+    font-weight: 400;
+}
+
+.text-light {
+    font-weight: 300;
 }
