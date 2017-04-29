@@ -197,23 +197,23 @@
 
                 li {
                     background-color: #232323;
-                    padding: 10px $content-padding-large;
+                    position: relative;
 
                     &:hover,
                     &:active {
                         background-color: lighten($dark-hover, 40%);
                     }
 
-                    a {
-                        padding-left: ($content-padding-base + $icon-font-size) * 1.4;
+                    > a {
+                        padding: 10px $content-padding-large 10px 48px;
+                        //padding-left: ($content-padding-base + $icon-font-size) * 1.4;
                         min-height: ($line-height-computed + 20);
                         font-size: $font-size-sm * 1.2;
                         color: $sidebar-color;
+                        display: block;
 
                         &:hover,
-                        &:visited,
-                        &:active,
-                        &:focus {
+                        &:active {
                             text-decoration: none;
                             color: #fff;
                         }

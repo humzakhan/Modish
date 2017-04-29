@@ -228,15 +228,16 @@ bar-content {
       width: 250px; }
       .sidebar .navigation > li ul li {
         background-color: #232323;
-        padding: 10px 20px; }
+        position: relative; }
         .sidebar .navigation > li ul li:hover, .sidebar .navigation > li ul li:active {
           background-color: rgba(102, 102, 102, 0.1); }
-        .sidebar .navigation > li ul li a {
-          padding-left: 39.2px;
+        .sidebar .navigation > li ul li > a {
+          padding: 10px 20px 10px 48px;
           min-height: 40px;
           font-size: 0.8256rem;
-          color: #c3c3c5; }
-          .sidebar .navigation > li ul li a:hover, .sidebar .navigation > li ul li a:visited, .sidebar .navigation > li ul li a:active, .sidebar .navigation > li ul li a:focus {
+          color: #c3c3c5;
+          display: block; }
+          .sidebar .navigation > li ul li > a:hover, .sidebar .navigation > li ul li > a:active {
             text-decoration: none;
             color: #fff; }
         .sidebar .navigation > li ul li.active {
