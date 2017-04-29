@@ -173,7 +173,105 @@
 
                                     <legend class="text-bold">Basic Inputs</legend>
                                     <fieldset class="content-group">
-                                        
+                                        <form action="#">
+                                            <div class="form-group row margin-top-10">
+                                                <div class="col-md-2">
+                                                    <label class="control-label col-form-label">Text Input</label>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <div class="col-md-2">
+                                                    <label class="control-label col-form-label">Password</label>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <input type="password" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <div class="col-md-2">
+                                                    <label class="control-label col-form-label">Disabled Input</label>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control" disabled="disabled" >
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <div class="col-md-2">
+                                                    <label class="control-label col-form-label">Readonly Input</label>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control" value="I am readonly." readonly="readonly">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <div class="col-md-2">
+                                                    <label class="control-label col-form-label">Placeholder</label>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control" placeholder="I am a placeholder!">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </fieldset>
+
+                                    <legend class="text-bold">Input Sizing</legend>
+                                    <fieldset class="content-group">
+                                        <form action="#">
+                                            <div class="form-group row margin-top-10">
+                                                <div class="col-md-2">
+                                                    <label class="control-label col-form-label">Large Input</label>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control-lg col-md-12" placeholder="using class .form-control-lg">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <div class="col-md-2">
+                                                    <label class="control-label col-form-label">Regular Input</label>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control" placeholder="using class .form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <div class="col-md-2">
+                                                    <label class="control-label col-form-label">Small Input</label>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control-sm col-md-12" placeholder="using class .form-control-sm">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </fieldset>
+
+                                    <legend class="text-bold">Validation States</legend>
+                                    <fieldset class="content-group">
+                                        <div class="form-group has-success">
+                                            <label class="form-control-label" for="inputSuccess1">Input with success</label>
+                                            <input type="text" class="form-control form-control-success" id="inputSuccess1">
+                                            <div class="form-control-feedback">Success! You've done it.</div>
+                                        </div>
+
+                                        <div class="form-group has-warning">
+                                            <label class="form-control-label" for="inputWarning1">Input with warning</label>
+                                            <input type="text" class="form-control form-control-warning" id="inputWarning1">
+                                            <div class="form-control-feedback">Shucks, check the formatting of that and try again.</div>
+                                        </div>
+
+                                        <div class="form-group has-danger">
+                                            <label class="form-control-label" for="inputDanger1">Input with danger</label>
+                                            <input type="text" class="form-control form-control-danger" id="inputDanger1">
+                                            <div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
+                                        </div>
                                     </fieldset>
                                 </div>
                             </div>
