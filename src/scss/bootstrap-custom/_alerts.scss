@@ -1,0 +1,30 @@
+/************************************************************************
+*
+* alerts.scss 
+* ----------------------------------------------------------------------
+* Custom alerts styling.
+*
+* Author: Humza Khan
+* Date: Apr 30, 2017.
+*
+*************************************************************************/
+
+.alert-solid {
+    color: #fff;
+
+    &.alert-info {
+        background-color: $brand-info;
+    }
+
+    &.alert-danger {
+        background-color: $brand-danger;
+    }
+
+    &.alert-warning {
+        background-color: $brand-warning;
+    }
+
+    &.alert-success {
+        background-color: $brand-success;
+    }
+}

@@ -371,3 +371,24 @@
 
 .card-title {
   margin-bottom: 15px; }
+
+/************************************************************************
+*
+* alerts.scss 
+* ----------------------------------------------------------------------
+* Custom alerts styling.
+*
+* Author: Humza Khan
+* Date: Apr 30, 2017.
+*
+*************************************************************************/
+.alert-solid {
+  color: #fff; }
+  .alert-solid.alert-info {
+    background-color: #40767D; }
+  .alert-solid.alert-danger {
+    background-color: #FF3939; }
+  .alert-solid.alert-warning {
+    background-color: #F78643; }
+  .alert-solid.alert-success {
+    background-color: #3C7D30; }
