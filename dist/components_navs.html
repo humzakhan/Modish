@@ -193,141 +193,91 @@
                 <div class="content">
                     <div class="row">
                         <div class="col-lg-12">
+                            <h4 class="card-title">Tabs</h4>
+                            <p>
+                                Tabs can be activated via calling bootstrap's JavaScript API. For this template, the tabs are activated in <code>app.js</code> file.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6">
                             <div class="card">
-                                <div class="card-block">
-                                    <h4 class="card-title">Input Groups</h4>
-                                    <p class="content-group-sm">
-                                        Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs.
-                                    </p>
+                                <div class="card-block text-center">
+                                    <h6 class="text-bold">Simple Tabs</h6>
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Messages</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Settings</a>
+                                        </li>
+                                    </ul>
 
-                                    <legend class="text-bold">Basic Examples</legend>
-                                    <fieldset class="content-group">
-                                        <form action="#">
-                                            <div class="form-group row margin-top-10">
-                                                <div class="col-md-2">
-                                                    <label class="control-label col-form-label">Group on left</label>
-                                                </div>
-                                                <div class="col-md-10">
-                                                    <div class="input-group">
-                                                        <span class="input-group-addon" id="basic-addon1">@</span>
-                                                        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group row">
-                                                <div class="col-md-2">
-                                                    <label class="control-label col-form-label">Group on right</label>
-                                                </div>
-                                                <div class="col-md-10">
-                                                    <div class="input-group">
-                                                        <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
-                                                        <span class="input-group-addon" id="basic-addon2">@example.com</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group row">
-                                                <div class="col-md-2">
-                                                    <label class="control-label col-form-label">URL Example</label>
-                                                </div>
-                                                <div class="col-md-10">
-                                                    <div class="input-group">
-                                                        <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
-                                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group row">
-                                                <div class="col-md-2">
-                                                    <label class="control-label col-form-label">Price</label>
-                                                </div>
-                                                <div class="col-md-10">
-                                                   <div class="input-group">
-                                                        <span class="input-group-addon">$</span>
-                                                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                                        <span class="input-group-addon">.00</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group row">
-                                                <div class="col-md-2">
-                                                    <label class="control-label col-form-label">Price (Left)</label>
-                                                </div>
-                                                <div class="col-md-10">
-                                                   <div class="input-group">
-                                                        <span class="input-group-addon">$</span>
-                                                        <span class="input-group-addon">0.00</span>
-                                                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </fieldset>
-
-                                    <legend class="text-bold">Sizing</legend>
-                                    <fieldset class="content-group">
-                                        <div class="form-group margin-top-10 row">
-                                             <div class="col-md-2">
-                                                 <label class="control-label col-form-label">Size 1</label>
-                                             </div>
-
-                                             <div class="col-md-10">
-                                                 <div class="input-group input-group-lg">
-                                                    <span class="input-group-addon" id="sizing-addon1">@</span>
-                                                    <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
-                                                </div>
-                                             </div>
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="home" role="tabpanel">
+                                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor volutpat.
                                         </div>
-
-                                        <div class="form-group row">
-                                            <div class="col-md-2">
-                                                <label class="contorl-label col-form-label">Size 2</label>
-                                            </div>
-
-                                            <div class="col-md-10">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon" id="sizing-addon2">@</span>
-                                                    <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
-                                                </div>
-                                            </div>
+                                        <div class="tab-pane" id="profile" role="tabpanel">
+                                            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec sollicitudin molestie malesuada.
                                         </div>
-                                    </fieldset>
-
-                                    <legend class="text-bold">Checkbox and Radio Addons</legend>
-                                    <fieldset class="content-group">
-                                        <div class="form-group row margin-top-10">
-                                            <div class="col-md-2">
-                                                <label class="contorl-label col-form-label">Checkbox</label>
-                                            </div>
-
-                                            <div class="col-md-10">
-                                               <div class="input-group">
-                                                    <span class="input-group-addon">
-                                                        <input type="checkbox" aria-label="Checkbox for following text input">
-                                                    </span>
-                                                    <input type="text" class="form-control" aria-label="Text input with checkbox">
-                                                </div>
-                                            </div>
+                                        <div class="tab-pane" id="messages" role="tabpanel">
+                                            Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                                            <br/>
+                                            Curabitur aliquet quam id dui posuere blandit. Proin eget tortor risus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Cras ultricies ligula sed magna dictum porta.
                                         </div>
-
-                                        <div class="form-group row">
-                                            <div class="col-md-2">
-                                                <label class="contorl-label col-form-label">Radio</label>
-                                            </div>
-
-                                            <div class="col-md-10">
-                                               <div class="input-group">
-                                                    <span class="input-group-addon">
-                                                        <input type="radio" aria-label="Radio button for following text input">
-                                                    </span>
-                                                    <input type="text" class="form-control" aria-label="Text input with radio button">
-                                                </div>
-                                            </div>
+                                        <div class="tab-pane" id="settings" role="tabpanel">
+                                            Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin molestie malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
                                         </div>
-                                    </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-block text-center">
+                                    <h6 class="text-bold">Justified Tabs</h6>
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs nav-justified" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab" href="#home1" role="tab">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#profile1" role="tab">Profile</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#messages1" role="tab">Messages</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#settings1" role="tab">Settings</a>
+                                        </li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="home1" role="tabpanel">
+                                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor volutpat.
+                                        </div>
+                                        <div class="tab-pane" id="profile1" role="tabpanel">
+                                            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec sollicitudin molestie malesuada.
+                                        </div>
+                                        <div class="tab-pane" id="messages1" role="tabpanel">
+                                            Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                                            <br/>
+                                            Curabitur aliquet quam id dui posuere blandit. Proin eget tortor risus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Cras ultricies ligula sed magna dictum porta.
+                                        </div>
+                                        <div class="tab-pane" id="settings1" role="tabpanel">
+                                            Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin molestie malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

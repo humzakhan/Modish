@@ -9,4 +9,12 @@ $(function() {
         e.preventDefault();
         $(this).parent('li').not('.disabled').toggleClass('active').children('ul').slideToggle(250);
     });
+
+    // Tabs
+    // ------------------------------------------------------------------
+
+    $('.nav-tabs a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    });
 });

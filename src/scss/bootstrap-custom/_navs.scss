@@ -1,0 +1,23 @@
+/************************************************************************
+*
+* navs.scss 
+* ----------------------------------------------------------------------
+* Custom navs styling.
+*
+* Author: Humza Khan
+* Date: Apr 30, 2017.
+*
+*************************************************************************/
+
+//** Tabs
+
+.tab-pane {
+    padding: $content-padding-base;
+}
+
+.nav-tabs {
+    .nav-link.active,
+    .nav-item.show .nav-link {
+        background-color: #fff;
+    }
+}

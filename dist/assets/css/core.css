@@ -431,3 +431,20 @@
   .badge-flat.badge-success {
     color: #5cb85c;
     border-color: #5cb85c; }
+
+/************************************************************************
+*
+* navs.scss 
+* ----------------------------------------------------------------------
+* Custom navs styling.
+*
+* Author: Humza Khan
+* Date: Apr 30, 2017.
+*
+*************************************************************************/
+.tab-pane {
+  padding: 15px; }
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  background-color: #fff; }
