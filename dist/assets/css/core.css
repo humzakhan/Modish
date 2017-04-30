@@ -392,3 +392,42 @@
     background-color: #F78643; }
   .alert-solid.alert-success {
     background-color: #3C7D30; }
+
+/************************************************************************
+*
+* badge.scss 
+* ----------------------------------------------------------------------
+* Custom badge styling.
+*
+* Author: Humza Khan
+* Date: Apr 30, 2017.
+*
+*************************************************************************/
+.badge {
+  padding: 3.6px 6.6px;
+  text-transform: uppercase; }
+
+.badge-pill {
+  border-radius: 100px; }
+
+.badge-flat {
+  background: transparent;
+  border: 2px solid; }
+  .badge-flat.badge-default {
+    color: #636c72;
+    border-color: #636c72; }
+  .badge-flat.badge-primary {
+    color: #0275d8;
+    border-color: #0275d8; }
+  .badge-flat.badge-danger {
+    color: #d9534f;
+    border-color: #d9534f; }
+  .badge-flat.badge-warning {
+    color: #f0ad4e;
+    border-color: #f0ad4e; }
+  .badge-flat.badge-info {
+    color: #5bc0de;
+    border-color: #5bc0de; }
+  .badge-flat.badge-success {
+    color: #5cb85c;
+    border-color: #5cb85c; }

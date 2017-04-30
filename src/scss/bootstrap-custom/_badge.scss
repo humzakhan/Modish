@@ -1,0 +1,54 @@
+/************************************************************************
+*
+* badge.scss 
+* ----------------------------------------------------------------------
+* Custom badge styling.
+*
+* Author: Humza Khan
+* Date: Apr 30, 2017.
+*
+*************************************************************************/
+
+.badge {
+    padding: ($padding-small-vertical * 0.6) ($padding-small-horizontal * 0.6);
+    text-transform: uppercase;
+}
+
+.badge-pill {
+    border-radius: 100px;
+}
+
+.badge-flat {
+    background: transparent;
+    border: 2px solid;
+
+    &.badge-default {
+        color: $badge-default-bg;
+        border-color: $badge-default-bg;
+    }
+
+    &.badge-primary {
+        color: $badge-primary-bg;
+        border-color: $badge-primary-bg;
+    }
+
+    &.badge-danger {
+        color: $badge-danger-bg;
+        border-color: $badge-danger-bg;
+    }
+
+    &.badge-warning {
+        color: $badge-warning-bg;
+        border-color: $badge-warning-bg;
+    }
+
+    &.badge-info {
+        color: $badge-info-bg;
+        border-color: $badge-info-bg;
+    }
+
+    &.badge-success {
+        color: $badge-success-bg;
+        border-color: $badge-success-bg;
+    }
+}
