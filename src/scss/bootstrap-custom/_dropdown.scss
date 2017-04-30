@@ -71,14 +71,12 @@
 }
 
 .dropdown-hover {
-  > li {
-    > a {
+  > .dropdown-item {
       &:hover,
       &:focus {
         background-color: $brand-primary;
         color: #fff;
       }
-    }
   }
 
   &[class*=bg-] {

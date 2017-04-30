@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Modish - Open Source Admin Dashboard Template</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/core.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/icons/fontawesome/styles.min.css">
+
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/app.min.js"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-toggleable-md">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="#">Modish</a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle nav-icon" data-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-bell-o"></i>
+                        <span class="hidden-xs-up position-right">Notifications</span>
+                        <span class="badge bg-danger-4">8</span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right width-300 list-notifications">
+                        <ul class="list-unstyled">
+                            <li class="media notif-unread">
+                                You have 3 unread notifications!
+                            </li>
+                            <li class="media">
+                                <div class="notif-icon bg-primary-4">
+                                    <i class="fa fa-bell-o"></i>
+                                </div>
+                                <div class="media-body notif-text">
+                                    You may want to check this!
+                                </div>
+                            </li>
+                            <li class="media mr-2">
+                                <div class="notif-icon bg-danger-4">
+                                    <i class="fa fa-exclamation"></i>
+                                </div>
+                                <div class="media-body notif-text text-danger-4">
+                                    Server Banshee is not responding.
+                                </div>
+                            </li>
+                            <li class="media">
+                                <div class="notif-icon bg-success-4">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <div class="media-body notif-text text-success-4">
+                                    Backup completed successfully.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    John Doe
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-user"></i> <span>Profile</span></a>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-comment"></i> <span>Messages</span></a>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-cog"></i> <span>Settings</span></a>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-sign-out"></i> <span>Logout</span></a>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /NAVBAR -->
+
+    <div class="page-container">
+        <div class="page-content">
+            <!-- inject:SIDEBAR -->
+            
+            <div id="sidebar-main" class="sidebar sidebar-default">
+                <div class="sidebar-content">
+                    <ul class="navigation">
+                        <li class="navigation-header">
+                            <span>Main</span>
+                            <i class="icon-menu"></i>
+                        </li>
+
+                        <li>
+                            <a href="index.html"><i class="fa fa-home"></i> <span>Dashboard</span></a>
+                        </li>
+
+                        <li class="navigation-header">
+                            <span>Forms</span>
+                            <i class="icon-menu"></i>
+                        </li>
+
+                        <li>
+                            <a href="index.html"><i class="fa fa-pencil"></i> <span>Form Elements</span></a>
+                            <ul>
+                                <li><a href="inputs.html">Inputs</a></li>
+                                <li><a href="input_groups.html">Input Groups</a></li>
+                                <li><a href="layout_horizontal.html">Horizontal Layout</a></li>
+                                <li><a href="layout_vertical.html">Vertical Layout</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="index.html"><i class="fa fa-th"></i> <span>Components</span></a>
+                            <ul>
+                                <li><a href="components_buttons.html">Buttons</a></li>
+                                <li><a href="components_dropdowns.html">Dropdown Menus</a></li>
+                                <li><a href="components_tabs.html">Tabs, Accordions &amp; Navs</a></li>
+                                <li><a href="components_labels.html">Labels &amp; Badges</a></li>
+                                <li><a href="components_alerts.html">Alerts</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="index.html"><i class="fa fa-heart"></i> <span>Icons</span></a>
+                            <ul>
+                                <li><a href="icons_fontawesome.html">Font Awesome</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="index.html"><i class="fa fa-mouse-pointer"></i> <span>Pickers</span></a>
+                            <ul>
+                                <li><a href="pickers_date.html">Date Pickers</a></li>
+                                <li><a href="pickers_time.html">Time Pickers</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="index.html"><i class="fa fa-table"></i> <span>Tables</span></a>
+                            <ul>
+                                <li><a href="tables_basic.html">Basic Tables</a></li>
+                                <li><a href="tables_datatables.html">Data Tables</a></li>
+                                <li><a href="tables_datatables_extensions.html">Data Tables Extensions</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="index.html"><i class="fa fa-magic"></i> <span>Appearence</span></a>
+                            <ul>
+                                <li><a href="appearence_panels.html">Content Panels</a></li>
+                                <li><a href="appearence_grids.html">Grid System</a></li>
+                                <li><a href="appearence_typography.html">Typography</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="navigation-header">
+                            <span>Pages</span>
+                            <i class="icon-menu"></i>
+                        </li>
+
+                        <li>
+                            <a href="index.html"><i class="fa fa-file-o"></i> <span>Pages</span></a>
+                            <ul>
+                                <li><a href="pages_login.html">Login</a></li>
+                                <li><a href="pages_register.html">Register</a></li>
+                                <li><a href="pages_profile.html">Profile</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- inject:/SIDEBAR -->
+
+            <!-- PAGE CONTENT -->
+            <div class="content-wrapper">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4 class="card-title">Dropdown Menus</h4>
+                            <p>
+                                Dropdowns are toggleable, contextual overlays for displaying lists of links and more. 
+                                They’re made interactive with the included Bootstrap dropdown JavaScript plugin. 
+                                They’re toggled by clicking, not by hovering.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card text-center">
+                                <div class="card-block">
+                                    <h6 class="text-bold content-group-sm">Default Dropdown</h6>
+                                    <div class="dropdown-menu dropdown-demo" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Seperated Link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="card text-center">
+                                <div class="card-block">
+                                    <h6 class="text-bold content-group-sm">Active Dropdown</h6>
+                                    <div class="dropdown-menu dropdown-demo" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item active" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Seperated Link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="col-lg-4">
+                            <div class="card text-center">
+                                <div class="card-block">
+                                    <h6 class="text-bold content-group-sm">Hover Dropdown</h6>
+                                    <div class="dropdown-menu dropdown-demo dropdown-hover" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Seperated Link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card text-center">
+                                <div class="card-block">
+                                    <h6 class="text-bold content-group-sm">With Icons</h6>
+                                    <div class="dropdown-menu dropdown-demo" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#"><i class="fa fa-bank position-left"></i>Action</a>
+                                        <a class="dropdown-item" href="#"><i class="fa fa-cloud position-left"></i>Another action</a>
+                                        <a class="dropdown-item" href="#"><i class="fa fa-edit position-left"></i>Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"><i class="fa fa-envelope position-left"></i>Seperated Link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="col-lg-4">
+                            <div class="card text-center">
+                                <div class="card-block">
+                                    <h6 class="text-bold content-group-sm">With Headers</h6>
+                                    <div class="dropdown-menu dropdown-demo" aria-labelledby="dropdownMenuButton">
+                                        <h6 class="dropdown-header">Dropdown header</h6>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Seperated Link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="card text-center">
+                                <div class="card-block">
+                                    <h6 class="text-bold content-group-sm">Disabled Items</h6>
+                                    <div class="dropdown-menu dropdown-demo" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item disabled" href="#">Another Action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Seperated Link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /PAGE CONTENT -->
+        </div>
+    </div>
+</body>
+
+</html>

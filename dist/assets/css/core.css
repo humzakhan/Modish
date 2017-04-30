@@ -321,7 +321,7 @@
         margin-left: 10px;
         margin-top: 4.5px; }
 
-.dropdown-hover > li > a:hover, .dropdown-hover > li > a:focus {
+.dropdown-hover > .dropdown-item:hover, .dropdown-hover > .dropdown-item:focus {
   background-color: #0E74AF;
   color: #fff; }
 

@@ -296,6 +296,15 @@ legend {
 .text-light {
   font-weight: 300; }
 
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-right: center; }
+
 .margin-5 {
   margin: 5px; }
 
