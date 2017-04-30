@@ -281,6 +281,12 @@ legend {
   border-bottom: 1px solid #c7c8c8;
   padding-left: 0; }
 
+.position-left {
+  margin-right: 9px; }
+
+.position-right {
+  margin-left: 9px; }
+
 .text-bold {
   font-weight: 800; }
 

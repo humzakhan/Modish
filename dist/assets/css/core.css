@@ -220,7 +220,6 @@
 *************************************************************************/
 .btn {
   position: relative;
-  border-radius: 2px;
   font-size: 0.688rem;
   margin: 2px; }
   .btn > i {
@@ -229,8 +228,12 @@
     outline: 0; }
   .btn::-moz-focus-inner {
     border: 0; }
-  .btn:hover[class*=bg-]:hover, .btn:hover[class*=bg-]:active, .btn:hover[class*=bg-]:focus, .btn:focus[class*=bg-]:hover, .btn:focus[class*=bg-]:active, .btn:focus[class*=bg-]:focus, .btn.focus[class*=bg-]:hover, .btn.focus[class*=bg-]:active, .btn.focus[class*=bg-]:focus {
-    color: #fff; }
+  .btn:hover, .btn:focus, .btn.focus {
+    cursor: pointer; }
+    .btn:hover[class*=bg-]:hover, .btn:hover[class*=bg-]:active, .btn:hover[class*=bg-]:focus, .btn:focus[class*=bg-]:hover, .btn:focus[class*=bg-]:active, .btn:focus[class*=bg-]:focus, .btn.focus[class*=bg-]:hover, .btn.focus[class*=bg-]:active, .btn.focus[class*=bg-]:focus {
+      color: #fff; }
+  .btn.btn-rounded {
+    border-radius: 100px; }
 
 /************************************************************************
 *

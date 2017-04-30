@@ -27,6 +27,15 @@ legend {
     padding-left: 0;
 }
 
+//Positions
+.position-left {
+    margin-right: $padding-large-vertical;
+}
+
+.position-right {
+    margin-left: $padding-large-vertical;
+}
+
 // Typography
 .text-bold {
     font-weight: 800;
