@@ -27,6 +27,23 @@ legend {
     padding-left: 0;
 }
 
+//Displays
+.display-block {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
 //Positions
 .position-left {
     margin-right: $padding-large-vertical;
