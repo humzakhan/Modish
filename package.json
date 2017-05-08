@@ -25,6 +25,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.1.2",
-    "gulp-util": "^3.0.8"
+    "gulp-util": "^3.0.8",
+    "main-bower-files": "^2.13.1"
   }
 }
