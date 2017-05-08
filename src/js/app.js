@@ -1,9 +1,9 @@
-$(function() {
+$(function () {
     // Sidebar items toggle
     // -----------------------------------------------------------------
 
     $('.navigation').find('li').has('ul').children('a').addClass('has-ul');
-    
+
     $('.navigation').find('li').not('.active').has('ul').children('ul').addClass('hidden-ul');
     $('.navigation').find('li').has('ul').children('a').on('click', function (e) {
         e.preventDefault();

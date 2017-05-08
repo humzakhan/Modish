@@ -1,0 +1,23 @@
+/************************************************************************
+*
+* datepickers.scss 
+* ----------------------------------------------------------------------
+* Custom datepickers styling.
+*
+* Author: Humza Khan
+* Date: May 8, 2017.
+*
+*************************************************************************/
+
+.picker {
+    select {
+        padding: 0;
+        height: inherit;
+        font-size: $font-size-base;
+        padding: 5px;
+    }
+}
+
+.picker__holder {
+    max-width: 380px;
+}
