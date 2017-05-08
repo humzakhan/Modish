@@ -434,3 +434,33 @@ legend {
 
 .list-notifications.dropdown-menu {
   padding: 0; }
+
+/************************************************************************
+*
+* fontawesome.scss 
+* ----------------------------------------------------------------------
+* Font Awesome icons custom styling.
+*
+* Author: Humza Khan
+* Date: May 8, 2017.
+*
+*************************************************************************/
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eee; }
+
+.fontawesome-icon-list .fa-hover a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  color: #222;
+  line-height: 32px;
+  height: 32px;
+  padding-left: 10px;
+  border-radius: 4px; }
+  .fontawesome-icon-list .fa-hover a:hover {
+    background-color: #1d9d74;
+    color: #fff;
+    text-decoration: none; }

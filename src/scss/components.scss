@@ -12,16 +12,15 @@
 // Core Variable overrides
 @import "core/variables";
 @import "core/mixins";
-
 // Core variables and mixins
 @import "../../bower_components/bootstrap/scss/variables";
 @import "../../bower_components/bootstrap/scss/mixins";
 @import "../../bower_components/bootstrap/scss/custom";
-
 // Layout
 @import "core/content";
 @import "core/layout/sidebar";
-
 // Helpers
 @import "components/helpers";
 @import "components/notifications";
+// Icons
+@import "components/fontawesome";
