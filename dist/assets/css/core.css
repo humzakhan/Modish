@@ -448,3 +448,12 @@
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   background-color: #fff; }
+
+.accordion > .card {
+  margin-bottom: 10px; }
+  .accordion > .card > .card-header {
+    padding: 7px 12px; }
+    .accordion > .card > .card-header a {
+      text-decoration: none;
+      font-size: 1.05rem;
+      color: #333; }

@@ -10,7 +10,6 @@
 *************************************************************************/
 
 //** Tabs
-
 .tab-pane {
     padding: $content-padding-base;
 }
@@ -19,5 +18,20 @@
     .nav-link.active,
     .nav-item.show .nav-link {
         background-color: #fff;
+    }
+}
+
+//** Accordions
+.accordion {
+    >.card {
+        margin-bottom: $content-padding-small;
+        >.card-header {
+            padding: $padding-base-vertical $padding-base-horizontal;
+            a {
+                text-decoration: none;
+                font-size: $font-size-base * 1.2;
+                color: $text-color;
+            }
+        }
     }
 }
