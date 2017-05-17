@@ -21,3 +21,27 @@
 .picker__holder {
     max-width: 380px;
 }
+
+.picker__list-item {
+    &:hover {
+        color: #fff;
+        background-color: $brand-primary;
+        border: none;
+    }
+}
+
+.picker__input,
+.picker__input--active {
+    border-color: $input-border-color;
+}
+
+.picker__list {
+    list-style: none;
+    padding: 0.75em 0 1.0em;
+    margin: 0;
+}
+
+.picker--time .picker__button--clear {
+    display: block;
+    width: 90%;
+}

@@ -15,6 +15,12 @@ gulp.task('watch:sass', function () {
     gulp.watch(['src/scss/*.scss', 'src/scss/core/**/*', 'src/scss/components/**/*', 'src/scss/**/*'], ['build:sass'])
 });
 
+gulp.task('watch:js', function () {
+    gulp.watch(['src/js/*.js'], ['build:js'])
+});
+
+gulp.task('watch', ['watch:js', 'watch:sass']);
+
 gulp.task('build:sass', function () {
     return gulp.src('src/scss/*.scss')
         .pipe(plumber())

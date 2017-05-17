@@ -483,3 +483,21 @@ legend {
 
 .picker__holder {
   max-width: 380px; }
+
+.picker__list-item:hover {
+  color: #fff;
+  background-color: #0E74AF;
+  border: none; }
+
+.picker__input,
+.picker__input--active {
+  border-color: rgba(0, 0, 0, 0.15); }
+
+.picker__list {
+  list-style: none;
+  padding: 0.75em 0 1.0em;
+  margin: 0; }
+
+.picker--time .picker__button--clear {
+  display: block;
+  width: 90%; }
