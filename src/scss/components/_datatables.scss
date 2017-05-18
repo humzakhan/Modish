@@ -1,0 +1,105 @@
+/************************************************************************
+*
+* datatables.scss 
+* ----------------------------------------------------------------------
+* Custom datatables styling.
+*
+* Author: Humza Khan
+*
+*************************************************************************/
+
+.dataTables_filter {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 0 $line-height-computed $content-padding-large;
+    >label {
+        margin-bottom: 0;
+        position: relative;
+        &:after {
+            content: "\f002";
+            font-family: 'FontAwesome';
+            font-size: $font-size-sm;
+            display: inline-block;
+            position: absolute;
+            top: $padding-base-horizontal;
+            right: $padding-base-horizontal;
+            color: $text-muted;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        >span {
+            float: left;
+            margin: ($padding-base-vertical + 1) $content-padding-base;
+            margin-left: 0;
+        }
+    }
+    input {
+        outline: 0;
+        width: 200px;
+        height: $input-height;
+        padding: $padding-base-vertical $padding-base-horizontal;
+        padding-right: $input-height-sm;
+        font-size: $font-size-base;
+        line-height: $input-line-height;
+        color: $input-color;
+        background-color: $input-bg;
+        border: 1px solid $input-border-color;
+        border-radius: $input-border-radius;
+    }
+    .filter-right & {
+        float: right;
+    }
+}
+
+.dataTables_length {
+    float: right;
+    display: inline-block;
+    margin: 0 0 $line-height-computed $content-padding-large;
+    >label {
+        margin-bottom: 0;
+        >span {
+            float: left;
+            margin: ($padding-base-vertical + 1) $content-padding-base;
+            margin-left: 0;
+        }
+        >select {
+            margin-top: 5px;
+            padding: 5px;
+        }
+    }
+    .length-left & {
+        float: left;
+    }
+}
+
+.dataTables_info {
+    float: left;
+    padding: ($padding-base-vertical + 1) 0;
+    margin-bottom: $line-height-computed;
+    .info-right & {
+        float: right;
+    }
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: none;
+    background-color: #eeeeef;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: none;
+    background-color: $sidebar-bg;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+    border-bottom: 1px solid #eeeeef;
+}
+
+table.dataTable tfoot th,
+table.dataTable tfoot td {
+    border-top: 1px solid #eeeeef;
+}

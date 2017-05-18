@@ -18,6 +18,9 @@
   "dependencies": {
     "bootstrap": "v4.0.0-alpha.6",
     "jquery": "^3.2.1",
-    "tether": "^1.4.0"
+    "tether": "^1.4.0",
+    "datatables.net": "^1.10.15",
+    "datatables.net-dt": "^3.2.2",
+    "datatables.net-bs": "^2.1.1"
   }
 }

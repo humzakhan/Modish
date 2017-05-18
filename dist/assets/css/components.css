@@ -501,3 +501,91 @@ legend {
 .picker--time .picker__button--clear {
   display: block;
   width: 90%; }
+
+/************************************************************************
+*
+* datatables.scss 
+* ----------------------------------------------------------------------
+* Custom datatables styling.
+*
+* Author: Humza Khan
+*
+*************************************************************************/
+.dataTables_filter {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0 0 20px 20px; }
+  .dataTables_filter > label {
+    margin-bottom: 0;
+    position: relative; }
+    .dataTables_filter > label:after {
+      content: "\f002";
+      font-family: 'FontAwesome';
+      font-size: 0.688rem;
+      display: inline-block;
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      color: #636c72;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+    .dataTables_filter > label > span {
+      float: left;
+      margin: 8px 15px;
+      margin-left: 0; }
+  .dataTables_filter input {
+    outline: 0;
+    width: 200px;
+    height: 2.09375rem;
+    padding: 7px 12px;
+    padding-right: 1.532rem;
+    font-size: 0.875rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem; }
+  .filter-right .dataTables_filter {
+    float: right; }
+
+.dataTables_length {
+  float: right;
+  display: inline-block;
+  margin: 0 0 20px 20px; }
+  .dataTables_length > label {
+    margin-bottom: 0; }
+    .dataTables_length > label > span {
+      float: left;
+      margin: 8px 15px;
+      margin-left: 0; }
+    .dataTables_length > label > select {
+      margin-top: 5px;
+      padding: 5px; }
+  .length-left .dataTables_length {
+    float: left; }
+
+.dataTables_info {
+  float: left;
+  padding: 8px 0;
+  margin-bottom: 20px; }
+  .info-right .dataTables_info {
+    float: right; }
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  background: none;
+  background-color: #eeeeef; }
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background: none;
+  background-color: #181717; }
+
+table.dataTable thead th,
+table.dataTable thead td {
+  border-bottom: 1px solid #eeeeef; }
+
+table.dataTable tfoot th,
+table.dataTable tfoot td {
+  border-top: 1px solid #eeeeef; }
