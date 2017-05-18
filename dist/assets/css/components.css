@@ -157,8 +157,7 @@ body {
     display: none; }
   .sidebar-collapsed .hidden-ul {
     display: none; }
-  .sidebar-collapsed .side
-bar-content {
+  .sidebar-collapsed .side bar-content {
     position: relative; }
   .sidebar .navigation {
     margin: 0;
@@ -184,13 +183,16 @@ bar-content {
           text-decoration: none; }
         .sidebar .navigation > li > a > i {
           float: left;
-          top: 0;
+          top: 11px;
+          position: absolute;
           margin-top: 2px;
           margin-right: 15px;
           font-size: 15px; }
           .sidebar .navigation > li > a > i.pull-right {
             margin-right: 0;
             margin-left: 15px; }
+        .sidebar .navigation > li > a > span {
+          margin-left: 27px; }
       .sidebar .navigation > li.disabled > a, .sidebar .navigation > li.disabled > a:hover, .sidebar .navigation > li.disabled > a:focus {
         color: inherit;
         background-color: transparent;
