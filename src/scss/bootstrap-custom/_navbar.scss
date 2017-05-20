@@ -46,9 +46,15 @@
         .badge {
             position: absolute;
             top: 2px;
-            right: 33px;
+            right: 23px;
             background-color: red;
             border-radius: 50%;
+        }
+        .nav-item {
+            margin-right: 7px;
+            &::last-of-type {
+                margin-right: 0;
+            }
         }
     }
 }

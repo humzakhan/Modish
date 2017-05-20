@@ -10,77 +10,66 @@
 *************************************************************************/
 
 .dropdown-menu {
-    padding: $list-spacing 0;
-    color: $text-color;
-
-    &[class*=bg-] {
-      > li {
-        > a {
-          color: inherit;
-
-          &:hover {
-            background-color: $dark-hover;
-          }
+  padding: $list-spacing 0;
+  color: $text-color;
+  &[class*=bg-] {
+    >li {
+      >a {
+        color: inherit;
+        &:hover {
+          background-color: $dark-hover;
         }
-
-        &.active {
-          > a {
-            background-color: $dark-hover;
-            color: inherit;
-          }
+      }
+      &.active {
+        >a {
+          background-color: $dark-hover;
+          color: inherit;
         }
       }
     }
-
-    > li {
-        position: relative;
-        margin-bottom: 1px;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-
-        &.active {
-          > a {
-            background-color: $brand-primary;
-            color: #fff;
-          }
-        }
+  }
+  >li {
+    position: relative;
+    margin-bottom: 1px;
+    &:last-child {
+      margin-bottom: 0;
     }
-
-    .dropdown-item {
-        padding: ($padding-base-vertical + 1) $content-padding-base;
-        font-size: $font-size-base;
-
-        > span {
-          position: absolute;
-          left: 36px;
-        }
-
-        > i,
-        > img {
-            margin-right: $content-padding-small;
-
-            &.pull-right {
-                margin-right: 0;
-                margin-left: $content-padding-small;
-                margin-top: ((($line-height-computed - $icon-font-size) / 2) + 1);
-            }
-        }
-    }
-}
-
-.dropdown-hover {
-  > .dropdown-item {
-      &:hover,
-      &:focus {
+    &.active {
+      >a {
         background-color: $brand-primary;
         color: #fff;
       }
+    }
   }
+  .dropdown-item {
+    padding: ($padding-base-vertical + 1) $content-padding-base;
+    font-size: $font-size-base;
+    >span {
+      position: absolute;
+      left: 36px;
+    }
+    >i,
+    >img {
+      margin-right: $content-padding-small;
+      &.pull-right {
+        margin-right: 0;
+        margin-left: $content-padding-small;
+        margin-top: ((($line-height-computed - $icon-font-size) / 2) + 1);
+      }
+    }
+  }
+}
 
+.dropdown-hover {
+  >.dropdown-item {
+    &:hover,
+    &:focus {
+      background-color: $brand-primary;
+      color: #fff;
+    }
+  }
   &[class*=bg-] {
-    > li > a {
+    >li>a {
       &:hover {
         background-color: $dark-hover;
       }
@@ -88,25 +77,25 @@
   }
 }
 
-.caret {
-    font-style: normal;
-    font-weight: normal;
-    border: 0;
-    margin: 0;
-    width: auto;
-    height: auto;
-    text-align: center;
-    margin-top: -1px;
-
-    &:after {
-        content: '\f107';
-        font-family: 'FontAwesome';
-        display: block;
-        font-size: $icon-font-size;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
+.dropdown-toggle {
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  &:after {
+    content: '\f107';
+    font-family: 'FontAwesome';
+    display: inline-block;
+    font-size: $icon-font-size;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border: none;
+    width: 0;
+    height: 0;
+    margin-left: 0.3em;
+    vertical-align: middle;
+    margin-top: -7px;
+  }
 }
 
 .dropdown-demo {
