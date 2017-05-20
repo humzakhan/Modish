@@ -45,7 +45,7 @@
     .navbar-nav {
         .badge {
             position: absolute;
-            top: 2px;
+            top: 3px;
             right: 23px;
             background-color: red;
             border-radius: 50%;
@@ -60,5 +60,16 @@
 }
 
 .navbar-toggler {
-    margin: ($padding-large-vertical * 1.2) ($padding-large-horizontal * 1.2);
+    margin-top: $content-padding-base;
+    margin-right: -7px;
+    color: #fff;
+    outline: none;
+    &:hover {
+        cursor: pointer;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        outline: none;
+    }
 }

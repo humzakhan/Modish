@@ -273,7 +273,7 @@
     margin-top: 6px; }
   .navbar .navbar-nav .badge {
     position: absolute;
-    top: 2px;
+    top: 3px;
     right: 23px;
     background-color: red;
     border-radius: 50%; }
@@ -283,7 +283,14 @@
       margin-right: 0; }
 
 .navbar-toggler {
-  margin: 10.8px 18px; }
+  margin-top: 15px;
+  margin-right: -7px;
+  color: #fff;
+  outline: none; }
+  .navbar-toggler:hover {
+    cursor: pointer; }
+  .navbar-toggler:hover, .navbar-toggler:focus, .navbar-toggler:active {
+    outline: none; }
 
 /************************************************************************
 *

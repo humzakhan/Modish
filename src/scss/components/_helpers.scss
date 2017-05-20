@@ -44,6 +44,15 @@ legend {
     display: inline-block;
 }
 
+//Alignments
+.valign-top {
+    vertical-align: top !important;
+}
+
+.valign-middle {
+    vertical-align: middle !important;
+}
+
 //Positions
 .position-left {
     margin-right: $padding-large-vertical;

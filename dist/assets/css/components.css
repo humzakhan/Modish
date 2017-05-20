@@ -301,6 +301,12 @@ legend {
 .display-inline-block {
   display: inline-block; }
 
+.valign-top {
+  vertical-align: top !important; }
+
+.valign-middle {
+  vertical-align: middle !important; }
+
 .position-left {
   margin-right: 9px; }
 
