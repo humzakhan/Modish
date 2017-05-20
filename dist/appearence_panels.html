@@ -1,0 +1,592 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Modish - Open Source Admin Dashboard Template</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/core.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/icons/fontawesome/styles.min.css">
+
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/app.min.js"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-toggleable-md">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="#">Modish</a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle nav-icon" data-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-bell-o"></i>
+                        <span class="hidden-xs-up position-right">Notifications</span>
+                        <span class="badge bg-danger-4">8</span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right width-300 list-notifications">
+                        <ul class="list-unstyled">
+                            <li class="media notif-unread">
+                                You have 3 unread notifications!
+                            </li>
+                            <li class="media">
+                                <div class="notif-icon bg-primary-4">
+                                    <i class="fa fa-bell-o"></i>
+                                </div>
+                                <div class="media-body notif-text">
+                                    You may want to check this!
+                                </div>
+                            </li>
+                            <li class="media mr-2">
+                                <div class="notif-icon bg-danger-4">
+                                    <i class="fa fa-exclamation"></i>
+                                </div>
+                                <div class="media-body notif-text text-danger-4">
+                                    Server Banshee is not responding.
+                                </div>
+                            </li>
+                            <li class="media">
+                                <div class="notif-icon bg-success-4">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <div class="media-body notif-text text-success-4">
+                                    Backup completed successfully.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                    John Doe
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-user"></i> <span>Profile</span></a>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-comment"></i> <span>Messages</span></a>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-cog"></i> <span>Settings</span></a>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-sign-out"></i> <span>Logout</span></a>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /NAVBAR -->
+
+    <div class="page-container">
+        <div class="page-content">
+            <!-- inject:SIDEBAR -->
+
+            <div id="sidebar-main" class="sidebar sidebar-default">
+                <div class="sidebar-content">
+                    <ul class="navigation">
+                        <li class="navigation-header">
+                            <span>Main</span>
+                            <i class="icon-menu"></i>
+                        </li>
+
+                        <li>
+                            <a href="index.html"><i class="fa fa-home"></i> <span>Dashboard</span></a>
+                        </li>
+
+                        <li class="navigation-header">
+                            <span>Forms</span>
+                            <i class="icon-menu"></i>
+                        </li>
+
+                        <li>
+                            <a href="index.html"><i class="fa fa-pencil"></i> <span>Form Elements</span></a>
+                            <ul>
+                                <li><a href="inputs.html">Inputs</a></li>
+                                <li><a href="input_groups.html">Input Groups</a></li>
+                                <li><a href="layout_horizontal.html">Horizontal Layout</a></li>
+                                <li><a href="layout_vertical.html">Vertical Layout</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="index.html"><i class="fa fa-th"></i> <span>Components</span></a>
+                            <ul>
+                                <li><a href="components_buttons.html">Buttons</a></li>
+                                <li><a href="components_dropdowns.html">Dropdown Menus</a></li>
+                                <li><a href="components_navs.html">Tabs, Accordions &amp; Navs</a></li>
+                                <li><a href="components_badges.html">Labels &amp; Badges</a></li>
+                                <li><a href="components_alerts.html">Alerts</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="index.html"><i class="fa fa-heart"></i> <span>Icons</span></a>
+                            <ul>
+                                <li><a href="icons_fontawesome.html">Font Awesome</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="index.html"><i class="fa fa-mouse-pointer"></i> <span>Pickers</span></a>
+                            <ul>
+                                <li><a href="pickers_date.html">Date Pickers</a></li>
+                                <li><a href="pickers_time.html">Time Pickers</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="index.html"><i class="fa fa-table"></i> <span>Tables</span></a>
+                            <ul>
+                                <li><a href="tables_basic.html">Basic Tables</a></li>
+                                <li><a href="tables_datatables.html">Data Tables</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="index.html"><i class="fa fa-magic"></i> <span>Appearence</span></a>
+                            <ul>
+                                <li><a href="appearence_panels.html">Content Panels</a></li>
+                                <li><a href="appearence_grids.html">Grid System</a></li>
+                                <li><a href="appearence_typography.html">Typography</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="navigation-header">
+                            <span>Pages</span>
+                            <i class="icon-menu"></i>
+                        </li>
+
+                        <li>
+                            <a href="index.html"><i class="fa fa-file-o"></i> <span>Pages</span></a>
+                            <ul>
+                                <li><a href="pages_login.html">Login</a></li>
+                                <li><a href="pages_register.html">Register</a></li>
+                                <li><a href="pages_profile.html">Profile</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- inject:/SIDEBAR -->
+
+            <!-- PAGE CONTENT -->
+            <div class="content-wrapper">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4 class="card-title text-bold">Cards</h4>
+                            <p>
+                                A <strong>card</strong> is a flexible and extensible content container. It includes options
+                                for headers and footers, a wide variety of content, contextual background colors, and powerful
+                                display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells,
+                                and thumbnails. Similar functionality to those components is available as modifier classes
+                                for cards.
+                            </p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="content-group-sm text-bold">Flat Panels</h5>
+                        </div>
+                    </div>
+
+                    <div class="row content-group">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-block">
+                                    <h5 class="card-title">Panel</h5>
+                                    <p>Bootstrap flat panel (card) example.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-block">
+                                    <h5 class="card-title">Panel <small>Subtitle</small></h5>
+                                    <p>Bootstrap flat panel (card) example.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="content-group-sm text-bold">Cards</h5>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-block">
+                                    <h4 class="card-title">Card title</h4>
+                                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                        content.
+                                    </p>
+                                    <a href="#" class="card-link">Card link</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card w-75">
+                                <div class="card-block">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary">Button</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="card w-50">
+                                <div class="card-block">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary">Button</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    Featured
+                                </div>
+                                <div class="card-block">
+                                    <h4 class="card-title">Special title treatment</h4>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    2 days ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row content-group">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    Quote
+                                </div>
+                                <div class="card-block">
+                                    <blockquote class="card-blockquote">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Cras justo odio</li>
+                                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item">Vestibulum at eros</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="content-group-sm text-bold">Text Alignment</h5>
+                        </div>
+                    </div>
+
+                    <div class="row content-group">
+                        <div class="col-md-4">
+                            <div class="card" style="width: 20rem;">
+                                <div class="card-block">
+                                    <h4 class="card-title">Special title treatment</h4>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-center" style="width: 20rem;">
+                                <div class="card-block">
+                                    <h4 class="card-title">Special title treatment</h4>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-right" style="width: 20rem;">
+                                <div class="card-block">
+                                    <h4 class="card-title">Special title treatment</h4>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="content-group-sm text-bold">Navigation</h5>
+                        </div>
+                    </div>
+
+                    <div class="row content-group">
+                        <div class="col-md-6">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    <ul class="nav nav-tabs card-header-tabs">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#">Active</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Link</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link disabled" href="#">Disabled</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-block">
+                                    <h4 class="card-title">Special title treatment</h4>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    <ul class="nav nav-pills card-header-pills">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#">Active</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Link</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link disabled" href="#">Disabled</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-block">
+                                    <h4 class="card-title">Special title treatment</h4>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="content-group-sm text-bold">Image Caps</h5>
+                        </div>
+                    </div>
+
+                    <div class="row content-group">
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22454%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20454%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15c268a7428%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A23pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15c268a7428%22%3E%3Crect%20width%3D%22454%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22168.1875%22%20y%3D%22100.2%22%3E454x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                                    alt="Card image cap">
+                                <div class="card-block">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+                                        This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-block">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+                                        This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                                <img class="card-img-bottom" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22454%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20454%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15c268a7428%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A23pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15c268a7428%22%3E%3Crect%20width%3D%22454%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22168.1875%22%20y%3D%22100.2%22%3E454x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                                    alt="Card image cap">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="content-group-sm text-bold">Solid Background</h5>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card card-inverse card-primary mb-3 text-center">
+                                <div class="card-block">
+                                    <blockquote class="card-blockquote">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card card-inverse card-success mb-3 text-center">
+                                <div class="card-block">
+                                    <blockquote class="card-blockquote">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card card-inverse card-info mb-3 text-center">
+                                <div class="card-block">
+                                    <blockquote class="card-blockquote">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row content-group">
+                        <div class="col-md-6">
+                            <div class="card card-inverse card-warning mb-3 text-center">
+                                <div class="card-block">
+                                    <blockquote class="card-blockquote">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card card-inverse card-danger text-center">
+                                <div class="card-block">
+                                    <blockquote class="card-blockquote">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="content-group-sm text-bold">Outline Cards</h5>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card card-outline-primary mb-3 text-center">
+                                <div class="card-block">
+                                    <blockquote class="card-blockquote">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card card-outline-secondary mb-3 text-center">
+                                <div class="card-block">
+                                    <blockquote class="card-blockquote">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card card-outline-success mb-3 text-center">
+                                <div class="card-block">
+                                    <blockquote class="card-blockquote">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card card-outline-info mb-3 text-center">
+                                <div class="card-block">
+                                    <blockquote class="card-blockquote">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row content-group">
+                        <div class="col-md-6">
+                            <div class="card card-outline-warning mb-3 text-center">
+                                <div class="card-block">
+                                    <blockquote class="card-blockquote">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card card-outline-danger text-center">
+                                <div class="card-block">
+                                    <blockquote class="card-blockquote">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /PAGE CONTENT -->
+        </div>
+    </div>
+</body>
+
+</html>
