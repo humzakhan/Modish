@@ -50,6 +50,19 @@ gulp.task('inject:sidebar', function () {
         .pipe(gulp.dest('dist/'));
 });
 
+gulp.task('inject:navbar', function () {
+    return gulp.src('dist/*.html')
+        .pipe(inject(gulp.src(['src/html/navbar.html']), {
+            starttag: '<!-- inject:NAVBAR -->',
+            endtag: '<!-- /inject:NAVBAR -->',
+            relative: true,
+            transform: function (filePath, file) {
+                return file.contents.toString('utf8')
+            }
+        }))
+        .pipe(gulp.dest('dist/'));
+});
+
 gulp.task('deploy:copy-assets', function () {
     return gulp.src(mainBowerFiles())
         .pipe(gulp.dest('dist/bower_components'));

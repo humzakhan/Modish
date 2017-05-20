@@ -259,6 +259,9 @@
     @media (min-width: 768px) {
       .navbar > .navbar-brand {
         min-width: 250px; } }
+    .navbar > .navbar-brand > img {
+      height: 20px;
+      width: auto; }
     .navbar > .navbar-brand:hover, .navbar > .navbar-brand:focus, .navbar > .navbar-brand:active {
       text-decoration: none; }
   .navbar .nav-link {
