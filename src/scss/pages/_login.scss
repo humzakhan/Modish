@@ -1,0 +1,38 @@
+/************************************************************************
+*
+* login.scss 
+* ----------------------------------------------------------------------
+* Page styles for login.
+*
+* Author: Humza Khan
+* Date: May 28, 2017.
+*
+*************************************************************************/
+
+#login {
+    >.card {
+        width: $login-container-width;
+        display: block;
+        margin: 0 auto;
+    }
+    .user-icon {
+        margin-bottom: $padding-base-vertical;
+        >i {
+            font-size: $font-size-lg * 3;
+        }
+    }
+    .user-details {
+        margin-top: $padding-large-vertical * 3;
+        >.input-group {
+            >.input-group-addon {
+                background: #fff;
+                border-right: none;
+            }
+        }
+    }
+    .user-links {
+        padding-top: $content-padding-base;
+        padding-bottom: $content-padding-base * 1.5;
+        font-size: $font-size-sm;
+    }
+}

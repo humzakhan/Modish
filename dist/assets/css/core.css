@@ -235,6 +235,9 @@
   .btn.btn-rounded {
     border-radius: 100px; }
 
+.btn-lg {
+  padding: 0.8em 0.8em; }
+
 /************************************************************************
 *
 * navbar.scss 

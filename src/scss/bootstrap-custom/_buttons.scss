@@ -13,11 +13,9 @@
     position: relative;
     font-size: $font-size-sm;
     margin: 2px;
-
-    > i {
-      font-size: 12px;
+    >i {
+        font-size: 12px;
     }
-
     &,
     &:active,
     &.active {
@@ -26,31 +24,29 @@
             outline: 0;
         }
     }
-
     &::-moz-focus-inner {
         border: 0;
     }
-
     &:hover,
     &:focus,
     &.focus {
         @include box-shadow(0 0 0 100px fade(#000, 5%) inset);
-        cursor: pointer;
-
-    // Active state
-    &:active,
-    &.active {
-        @include box-shadow(0 0 0 100px fade(#000, 10%) inset);
+        cursor: pointer; // Active state
+        &:active,
+        &.active {
+            @include box-shadow(0 0 0 100px fade(#000, 10%) inset);
+        }
+        &[class*=bg-]:hover,
+        &[class*=bg-]:active,
+        &[class*=bg-]:focus {
+            color: #fff;
+        }
     }
-
-    &[class*=bg-]:hover,
-    &[class*=bg-]:active,
-    &[class*=bg-]:focus {
-      color: #fff;
+    &.btn-rounded {
+        border-radius: 100px;
     }
-  }
+}
 
-  &.btn-rounded {
-      border-radius: 100px;
-  }
+.btn-lg {
+    padding: 0.8em 0.8em;
 }
