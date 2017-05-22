@@ -624,11 +624,15 @@ table.dataTable tfoot td {
 
 #login .user-details {
   margin-top: 27px; }
-  #login .user-details > .input-group > .input-group-addon {
-    background: #fff;
-    border-right: none; }
+  #login .user-details .input-group-addon {
+    width: 35px; }
 
 #login .user-links {
   padding-top: 15px;
   padding-bottom: 22.5px;
   font-size: 0.688rem; }
+
+#login input {
+  font-family: "Lato", sans-serif; }
+  #login input:active, #login input:focus, #login input:hover {
+    outline: none; }

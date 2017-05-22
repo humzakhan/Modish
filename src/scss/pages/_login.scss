@@ -23,16 +23,21 @@
     }
     .user-details {
         margin-top: $padding-large-vertical * 3;
-        >.input-group {
-            >.input-group-addon {
-                background: #fff;
-                border-right: none;
-            }
+        .input-group-addon {
+            width: 35px;
         }
     }
     .user-links {
         padding-top: $content-padding-base;
         padding-bottom: $content-padding-base * 1.5;
         font-size: $font-size-sm;
+    }
+    input {
+        font-family: $font-family-base;
+        &:active,
+        &:focus,
+        &:hover {
+            outline: none;
+        }
     }
 }
