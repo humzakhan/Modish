@@ -613,14 +613,14 @@ table.dataTable tfoot td {
 *
 *************************************************************************/
 #login > .card {
-  width: 350px;
+  max-width: 350px;
   display: block;
   margin: 0 auto; }
 
 #login .user-icon {
   margin-bottom: 7px; }
   #login .user-icon > i {
-    font-size: 3.354rem; }
+    font-size: 4.472rem; }
 
 #login .user-details {
   margin-top: 27px; }

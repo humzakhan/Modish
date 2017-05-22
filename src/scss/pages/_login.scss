@@ -11,14 +11,14 @@
 
 #login {
     >.card {
-        width: $login-container-width;
+        max-width: $login-container-width;
         display: block;
         margin: 0 auto;
     }
     .user-icon {
         margin-bottom: $padding-base-vertical;
         >i {
-            font-size: $font-size-lg * 3;
+            font-size: $font-size-lg * 4;
         }
     }
     .user-details {
