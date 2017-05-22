@@ -53,8 +53,8 @@ gulp.task('inject:sidebar', function () {
 gulp.task('inject:navbar', function () {
     return gulp.src('dist/*.html')
         .pipe(inject(gulp.src(['src/html/navbar.html']), {
-            starttag: '<!-- inject:NAVBAR -->',
-            endtag: '<!-- /inject:NAVBAR -->',
+            starttag: '<!-- NAVBAR -->',
+            endtag: '<!-- /NAVBAR -->',
             relative: true,
             transform: function (filePath, file) {
                 return file.contents.toString('utf8')
