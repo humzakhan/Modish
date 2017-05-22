@@ -34,10 +34,8 @@
     }
     input {
         font-family: $font-family-base;
-        &:active,
-        &:focus,
-        &:hover {
-            outline: none;
+        &:focus {
+            border-color: $input-border-color !important;
         }
     }
 }

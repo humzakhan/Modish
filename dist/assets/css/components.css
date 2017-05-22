@@ -634,5 +634,5 @@ table.dataTable tfoot td {
 
 #login input {
   font-family: "Lato", sans-serif; }
-  #login input:active, #login input:focus, #login input:hover {
-    outline: none; }
+  #login input:focus {
+    border-color: rgba(0, 0, 0, 0.15) !important; }
