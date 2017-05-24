@@ -17,10 +17,10 @@
     position: relative;
     background-color: $sidebar-bg;
     color: $sidebar-color;
+    width: $sidebar-base-width;
     @media (min-width: $screen-size-md) {
         display: table-cell;
         vertical-align: top;
-        max-width: $sidebar-base-width;
     }
     &-default {
         z-index: 99;
