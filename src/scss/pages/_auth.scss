@@ -42,12 +42,12 @@
 
 #login {
     >.card {
-        width: $login-container-width;
+        max-width: $login-container-width;
     }
 }
 
 #register {
     >.card {
-        width: $register-container-width;
+        max-width: $register-container-width;
     }
 }

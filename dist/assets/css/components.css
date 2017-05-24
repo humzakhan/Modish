@@ -638,7 +638,7 @@ table.dataTable tfoot td {
     border-color: rgba(0, 0, 0, 0.15) !important; }
 
 #login > .card {
-  width: 350px; }
+  max-width: 350px; }
 
 #register > .card {
-  width: 600px; }
+  max-width: 600px; }
