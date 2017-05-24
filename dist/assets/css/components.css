@@ -612,27 +612,33 @@ table.dataTable tfoot td {
 * Date: May 28, 2017.
 *
 *************************************************************************/
-#login > .card {
-  max-width: 350px;
+.auth-box > .card {
   display: block;
   margin: 0 auto; }
 
-#login .user-icon {
+.auth-box .user-icon {
   margin-bottom: 7px; }
-  #login .user-icon > i {
-    font-size: 4.472rem; }
+  .auth-box .user-icon > i {
+    font-size: 4.472rem;
+    color: #0E74AF; }
 
-#login .user-details {
+.auth-box .user-details {
   margin-top: 27px; }
-  #login .user-details .input-group-addon {
+  .auth-box .user-details .input-group-addon {
     width: 35px; }
 
-#login .user-links {
+.auth-box .user-links {
   padding-top: 15px;
   padding-bottom: 22.5px;
   font-size: 0.688rem; }
 
-#login input {
+.auth-box input {
   font-family: "Lato", sans-serif; }
-  #login input:focus {
+  .auth-box input:focus {
     border-color: rgba(0, 0, 0, 0.15) !important; }
+
+#login > .card {
+  width: 350px; }
+
+#register > .card {
+  width: 600px; }
