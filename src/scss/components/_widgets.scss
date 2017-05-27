@@ -1,0 +1,48 @@
+/************************************************************************
+*
+* widgets.scss 
+* ----------------------------------------------------------------------
+* Widget styling goes here.
+*
+* Author: Humza Khan
+*
+*************************************************************************/
+
+.widget-overview {
+    @media(min-width: $screen-size-xs) {
+        margin-bottom: 10px;
+    }
+    >.inner {
+        padding: $content-padding-base;
+        color: #fff;
+        >h2 {
+            font-weight: 900;
+        }
+        >p {
+            font-weight: bold;
+        }
+    }
+    >.icon {
+        position: absolute;
+        right: 25px;
+        top: 5px;
+        font-size: 60px;
+        color: rgba(0, 0, 0, 0.25)
+    }
+    >.details {
+        padding: 3px;
+        color: #fff;
+        text-align: center;
+        font-size: $font-size-sm;
+        opacity: 0.85;
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+        >span {
+            i {
+                margin-left: 5px;
+            }
+        }
+    }
+}
