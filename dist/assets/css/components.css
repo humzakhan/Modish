@@ -704,3 +704,20 @@ table.dataTable tfoot td {
     cursor: pointer; }
   .widget-overview > .details > span i {
     margin-left: 5px; }
+
+/************************************************************************
+*
+* chartist.scss 
+* ----------------------------------------------------------------------
+* Custom styling for chartist plugin.
+*
+* Author: Humza Khan
+*
+*************************************************************************/
+.ct-chart-blue .ct-series-a .ct-line,
+.ct-chart-blue .ct-series-a .ct-bar {
+  stroke: #0E74AF; }
+
+.ct-chart-blue .ct-series-b .ct-line,
+.ct-chart-blue .ct-series-b .ct-bar {
+  stroke: #65A6CC; }

@@ -1,0 +1,24 @@
+/************************************************************************
+*
+* chartist.scss 
+* ----------------------------------------------------------------------
+* Custom styling for chartist plugin.
+*
+* Author: Humza Khan
+*
+*************************************************************************/
+
+.ct-chart-blue {
+    .ct-series-a {
+        .ct-line,
+        .ct-bar {
+            stroke: $color-primary-4;
+        }
+    }
+    .ct-series-b {
+        .ct-line,
+        .ct-bar {
+            stroke: $color-primary-1;
+        }
+    }
+}
