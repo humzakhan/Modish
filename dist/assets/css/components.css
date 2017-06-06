@@ -492,12 +492,14 @@ legend {
   color: #222;
   line-height: 32px;
   height: 32px;
-  padding-left: 10px;
+  padding-left: 15px;
   border-radius: 4px; }
   .fontawesome-icon-list .fa-hover a:hover {
-    background-color: #1d9d74;
+    background-color: #2380B6;
     color: #fff;
     text-decoration: none; }
+  .fontawesome-icon-list .fa-hover a > i {
+    margin-right: 6px; }
 
 /************************************************************************
 *
