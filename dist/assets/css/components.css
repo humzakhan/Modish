@@ -755,7 +755,10 @@ table.dataTable tfoot td {
       border: 1px solid #ddd; }
     .recent-members > li > .user-name {
       font-weight: bold;
-      font-size: 0.7912rem; }
+      font-size: 0.7912rem;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
     .recent-members > li > .joined-date {
       color: #999;
       font-size: 0.688rem; }

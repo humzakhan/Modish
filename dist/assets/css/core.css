@@ -252,13 +252,17 @@
   margin-bottom: 0;
   border-width: 1px 0;
   padding: 0;
-  background-color: #181717;
-  color: #c3c3c5;
+  background-color: #2380B6;
+  color: #fff;
   padding-right: 20px; }
   .navbar > .navbar-brand {
-    padding: 10.8px 18px;
-    text-align: left;
-    color: #c3c3c5; }
+    background-color: #0D6AA0;
+    display: block;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding: 0 15px; }
     @media (min-width: 768px) {
       .navbar > .navbar-brand {
         min-width: 250px; } }
@@ -268,7 +272,7 @@
     .navbar > .navbar-brand:hover, .navbar > .navbar-brand:focus, .navbar > .navbar-brand:active {
       text-decoration: none; }
   .navbar .nav-link {
-    color: #c3c3c5; }
+    color: #fff; }
   .navbar .dropdown-menu {
     box-shadow: none;
     -webkit-box-shadow: none;
@@ -284,6 +288,13 @@
     margin-right: 7px; }
     .navbar .navbar-nav .nav-item::last-of-type {
       margin-right: 0; }
+  .navbar .user-img {
+    float: left;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: -2px; }
 
 .navbar-toggler {
   margin-top: 15px;
