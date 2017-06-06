@@ -15,7 +15,10 @@
     padding: 0;
     background-color: $color-primary-3;
     color: #fff;
-    padding-right: $content-padding-large;
+   
+   @media(min-width: $screen-size-lg) {
+        padding-right: 20px;
+   }
 
     > .navbar-brand {
         display: block;
@@ -39,6 +42,10 @@
 
     .nav-link {
         color: #fff;
+
+        @media(max-width: $screen-size-lg) {
+            text-align: left;
+        }
     }
 
     .dropdown-menu {
@@ -46,6 +53,13 @@
         -webkit-box-shadow: none;
         border-radius: 0;
         margin-top: 6px;
+
+        @media(max-width: $screen-size-lg) {
+            border: 0;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
     }
 
     .navbar-nav {
@@ -56,12 +70,35 @@
             right: 23px;
             background-color: red;
             border-radius: 50%;
+
+            @media(max-width: $screen-size-lg) {
+                position: static;
+                float: right;
+                margin-top: 1px;
+            }
         }
 
         .nav-item {
             margin-right: 7px;
             &::last-of-type {
                 margin-right: 0;
+            }
+
+            @media(max-width: $screen-size-lg) {
+                margin-right: 0;
+            }
+        }
+
+        > li > a {
+            @media(max-width: $screen-size-md) {
+                padding-left: $content-padding-large;
+                padding-top: $content-padding-small;
+                padding-right: $content-padding-large;
+                width: 100%;
+
+                &:hover {
+                    background-color: $color-primary-5;
+                }
             }
         }
     }

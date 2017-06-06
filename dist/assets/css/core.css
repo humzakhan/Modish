@@ -253,8 +253,10 @@
   border-width: 1px 0;
   padding: 0;
   background-color: #2380B6;
-  color: #fff;
-  padding-right: 20px; }
+  color: #fff; }
+  @media (min-width: 992px) {
+    .navbar {
+      padding-right: 20px; } }
   .navbar > .navbar-brand {
     display: block;
     float: left;
@@ -269,21 +271,46 @@
       text-decoration: none; }
   .navbar .nav-link {
     color: #fff; }
+    @media (max-width: 992px) {
+      .navbar .nav-link {
+        text-align: left; } }
   .navbar .dropdown-menu {
     box-shadow: none;
     -webkit-box-shadow: none;
     border-radius: 0;
     margin-top: 6px; }
+    @media (max-width: 992px) {
+      .navbar .dropdown-menu {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%; } }
   .navbar .navbar-nav .badge {
     position: absolute;
     top: 3px;
     right: 23px;
     background-color: red;
     border-radius: 50%; }
+    @media (max-width: 992px) {
+      .navbar .navbar-nav .badge {
+        position: static;
+        float: right;
+        margin-top: 1px; } }
   .navbar .navbar-nav .nav-item {
     margin-right: 7px; }
     .navbar .navbar-nav .nav-item::last-of-type {
       margin-right: 0; }
+    @media (max-width: 992px) {
+      .navbar .navbar-nav .nav-item {
+        margin-right: 0; } }
+  @media (max-width: 768px) {
+    .navbar .navbar-nav > li > a {
+      padding-left: 20px;
+      padding-top: 10px;
+      padding-right: 20px;
+      width: 100%; }
+      .navbar .navbar-nav > li > a:hover {
+        background-color: #0D6AA0; } }
   .navbar .user-img {
     float: left;
     width: 27px;
@@ -370,6 +397,9 @@
     margin-left: 0.3em;
     vertical-align: middle;
     margin-top: -7px; }
+    @media (max-width: 768px) {
+      .dropdown-toggle:after {
+        content: ''; } }
 
 .dropdown-demo {
   display: block;
@@ -377,6 +407,25 @@
   width: 100%;
   margin-top: 0;
   float: none; }
+
+.caret {
+  font-style: normal;
+  font-weight: normal;
+  text-align: center; }
+  .caret:after {
+    content: '\f107';
+    font-family: 'FontAwesome';
+    display: inline-block;
+    font-size: 13px;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border: none;
+    width: 0;
+    height: 0;
+    margin-left: 0.3em;
+    vertical-align: middle;
+    margin-top: -7px; }
 
 /************************************************************************
 *

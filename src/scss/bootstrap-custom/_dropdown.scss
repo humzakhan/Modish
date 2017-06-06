@@ -95,6 +95,10 @@
     margin-left: 0.3em;
     vertical-align: middle;
     margin-top: -7px;
+
+    @media(max-width: $screen-size-md) {
+        content: '';
+    }
   }
 }
 
@@ -104,4 +108,26 @@
   width: 100%;
   margin-top: 0;
   float: none;
+}
+
+.caret {
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+
+  &:after {
+    content: '\f107';
+    font-family: 'FontAwesome';
+    display: inline-block;
+    font-size: $icon-font-size;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border: none;
+    width: 0;
+    height: 0;
+    margin-left: 0.3em;
+    vertical-align: middle;
+    margin-top: -7px;
+  }
 }
