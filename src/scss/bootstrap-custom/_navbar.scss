@@ -45,6 +45,14 @@
 
         @media(max-width: $screen-size-lg) {
             text-align: left;
+            
+            > i {
+                padding-left: 5px;
+
+                &::last-of-type {
+                    padding-left: 0;
+                }
+            }
         }
     }
 
@@ -98,6 +106,10 @@
 
                 &:hover {
                     background-color: $color-primary-5;
+                }
+                
+                &:last-of-type {
+                    padding-bottom: $content-padding-base;
                 }
             }
         }

@@ -273,7 +273,11 @@
     color: #fff; }
     @media (max-width: 992px) {
       .navbar .nav-link {
-        text-align: left; } }
+        text-align: left; }
+        .navbar .nav-link > i {
+          padding-left: 5px; }
+          .navbar .nav-link > i::last-of-type {
+            padding-left: 0; } }
   .navbar .dropdown-menu {
     box-shadow: none;
     -webkit-box-shadow: none;
@@ -310,7 +314,9 @@
       padding-right: 20px;
       width: 100%; }
       .navbar .navbar-nav > li > a:hover {
-        background-color: #0D6AA0; } }
+        background-color: #0D6AA0; }
+      .navbar .navbar-nav > li > a:last-of-type {
+        padding-bottom: 15px; } }
   .navbar .user-img {
     float: left;
     width: 27px;
