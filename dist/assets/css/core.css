@@ -256,16 +256,12 @@
   color: #fff;
   padding-right: 20px; }
   .navbar > .navbar-brand {
-    background-color: #0D6AA0;
     display: block;
     float: left;
     height: 50px;
     line-height: 50px;
     text-align: center;
     padding: 0 15px; }
-    @media (min-width: 768px) {
-      .navbar > .navbar-brand {
-        min-width: 250px; } }
     .navbar > .navbar-brand > img {
       height: 20px;
       width: auto; }

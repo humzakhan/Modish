@@ -16,37 +16,40 @@
     background-color: $color-primary-3;
     color: #fff;
     padding-right: $content-padding-large;
-    >.navbar-brand {
-        background-color: $color-primary-5;
+
+    > .navbar-brand {
         display: block;
         float: left;
         height: 50px;
         line-height: 50px;
         text-align: center;
         padding: 0 15px;
-        @media (min-width: $screen-size-md) {
-            min-width: $sidebar-base-width;
-        }
-        >img {
+        
+        > img {
             height: 20px;
             width: auto;
         }
+
         &:hover,
         &:focus,
         &:active {
             text-decoration: none;
         }
     }
+
     .nav-link {
         color: #fff;
     }
+
     .dropdown-menu {
         box-shadow: none;
         -webkit-box-shadow: none;
         border-radius: 0;
         margin-top: 6px;
     }
+
     .navbar-nav {
+
         .badge {
             position: absolute;
             top: 3px;
@@ -54,6 +57,7 @@
             background-color: red;
             border-radius: 50%;
         }
+
         .nav-item {
             margin-right: 7px;
             &::last-of-type {
@@ -61,6 +65,7 @@
             }
         }
     }
+
     .user-img {
         float: left;
         width: 27px;
@@ -72,13 +77,16 @@
 }
 
 .navbar-toggler {
+
     margin-top: $content-padding-base;
     margin-right: -7px;
     color: #fff;
     outline: none;
+
     &:hover {
         cursor: pointer;
     }
+    
     &:hover,
     &:focus,
     &:active {
