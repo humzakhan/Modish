@@ -17,11 +17,19 @@
     position: relative;
     background-color: $sidebar-bg;
     color: $sidebar-color;
-    width: $sidebar-base-width;
+    width: 0;
+    
     @media (min-width: $screen-size-md) {
         display: table-cell;
         vertical-align: top;
+        width: $sidebar-base-width;
     }
+
+    &-block {
+        width: $sidebar-base-width;
+        display: block;
+    }
+
     &-default {
         z-index: 99;
         .navigation-header {
