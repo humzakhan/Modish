@@ -1,0 +1,68 @@
+/************************************************************************
+*
+* extras.scss 
+* ----------------------------------------------------------------------
+* Extra styles for random designs.
+*
+* Author: Humza Khan
+*
+*************************************************************************/
+
+.recent-products {
+    >ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        >li {
+            padding-bottom: $content-padding-large * 1.18;
+            >.product-image {
+                float: left;
+                >img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            >.product-info {
+                margin-left: $content-padding-large * 3;
+                >.product-title {
+                    font-weight: bold;
+                    >a {
+                        color: $color-primary-3;
+                    }
+                }
+                >.product-description {
+                    display: block;
+                    color: #888;
+                    font-size: $font-size-sm * 1.1;
+                }
+            }
+        }
+    }
+}
+
+.recent-members {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    >li {
+        width: 25%;
+        float: left;
+        text-align: center;
+        margin-bottom: $content-padding-large;
+        >img {
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            vertical-align: middle;
+            border: 1px solid #ddd;
+        }
+        >.user-name {
+            font-weight: bold;
+            font-size: $font-size-sm * 1.15;
+        }
+        >.joined-date {
+            color: #999;
+            font-size: $font-size-sm;
+        }
+    }
+}

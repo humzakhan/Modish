@@ -707,6 +707,59 @@ table.dataTable tfoot td {
 
 /************************************************************************
 *
+* extras.scss 
+* ----------------------------------------------------------------------
+* Extra styles for random designs.
+*
+* Author: Humza Khan
+*
+*************************************************************************/
+.recent-products > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+  .recent-products > ul > li {
+    padding-bottom: 23.6px; }
+    .recent-products > ul > li > .product-image {
+      float: left; }
+      .recent-products > ul > li > .product-image > img {
+        width: 50px;
+        height: 50px; }
+    .recent-products > ul > li > .product-info {
+      margin-left: 60px; }
+      .recent-products > ul > li > .product-info > .product-title {
+        font-weight: bold; }
+        .recent-products > ul > li > .product-info > .product-title > a {
+          color: #2380B6; }
+      .recent-products > ul > li > .product-info > .product-description {
+        display: block;
+        color: #888;
+        font-size: 0.7568rem; }
+
+.recent-members {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+  .recent-members > li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    margin-bottom: 20px; }
+    .recent-members > li > img {
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      vertical-align: middle;
+      border: 1px solid #ddd; }
+    .recent-members > li > .user-name {
+      font-weight: bold;
+      font-size: 0.7912rem; }
+    .recent-members > li > .joined-date {
+      color: #999;
+      font-size: 0.688rem; }
+
+/************************************************************************
+*
 * chartist.scss 
 * ----------------------------------------------------------------------
 * Custom styling for chartist plugin.
