@@ -499,7 +499,7 @@ legend {
     color: #fff;
     text-decoration: none; }
   .fontawesome-icon-list .fa-hover a > i {
-    margin-right: 6px; }
+    margin-right: 7px; }
 
 /************************************************************************
 *
@@ -744,13 +744,13 @@ table.dataTable tfoot td {
   margin: 0; }
   .recent-members > li {
     width: 25%;
+    padding: 10px;
     float: left;
-    text-align: center;
-    margin-bottom: 20px; }
+    text-align: center; }
     .recent-members > li > img {
       border-radius: 50%;
-      height: 50px;
-      width: 50px;
+      max-width: 100%;
+      height: auto;
       vertical-align: middle;
       border: 1px solid #ddd; }
     .recent-members > li > .user-name {
