@@ -12,12 +12,10 @@
 .sidebar {
     font-family: 'Raleway', sans-serif;
     font-size: $font-size-base * 0.4;
-    display: none;
     font-weight: 600;
     position: relative;
     background-color: $sidebar-bg;
     color: $sidebar-color;
-    width: 0;
     
     @media (min-width: $screen-size-md) {
         display: table-cell;
@@ -25,8 +23,11 @@
         width: $sidebar-base-width;
     }
 
+    @media (max-width: $screen-size-md) {
+        width: 100%;
+    }
+
     &-block {
-        width: $sidebar-base-width;
         display: block;
     }
 
@@ -175,8 +176,12 @@
                 margin: 0;
                 padding: 0;
                 background-color: fade(#000, 15%);
-                width: $sidebar-base-width;
                 @include box-shadow(0 1px 0 fade(#fff, 5%));
+
+                @media (max-width: $screen-size-md) {
+                        width: 100%;
+                }
+
                 li {
                     background-color: #232323;
                     position: relative;

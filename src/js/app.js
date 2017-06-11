@@ -10,6 +10,13 @@ $(function () {
         $(this).parent('li').not('.disabled').toggleClass('active').children('ul').slideToggle(250);
     });
 
+    // Sidebar Toggle
+    // ------------------------------------------------------------------
+
+    $('#toggle-sidebar').click(function() {
+        $('.sidebar').slideToggle('slow');
+    });
+
     // Tabs
     // ------------------------------------------------------------------
 

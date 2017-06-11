@@ -129,19 +129,19 @@ body {
 .sidebar {
   font-family: 'Raleway', sans-serif;
   font-size: 0.35rem;
-  display: none;
   font-weight: 600;
   position: relative;
   background-color: #181717;
-  color: #c3c3c5;
-  width: 0; }
+  color: #c3c3c5; }
   @media (min-width: 768px) {
     .sidebar {
       display: table-cell;
       vertical-align: top;
       width: 250px; } }
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%; } }
   .sidebar-block {
-    width: 250px;
     display: block; }
   .sidebar-default {
     z-index: 99; }
@@ -247,8 +247,10 @@ body {
       list-style: none;
       margin: 0;
       padding: 0;
-      background-color: fade(#000, 15%);
-      width: 250px; }
+      background-color: fade(#000, 15%); }
+      @media (max-width: 768px) {
+        .sidebar .navigation > li ul {
+          width: 100%; } }
       .sidebar .navigation > li ul li {
         background-color: #232323;
         position: relative; }

@@ -307,7 +307,7 @@
     @media (max-width: 992px) {
       .navbar .navbar-nav .nav-item {
         margin-right: 0; } }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     .navbar .navbar-nav > li > a {
       padding-left: 20px;
       padding-top: 10px;
