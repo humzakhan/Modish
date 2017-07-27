@@ -4,7 +4,7 @@ Built with Bootstrap 4, **Modish** is a modern and beautiful open source admin d
 ## Demo 
 You can view the template in active by clicking **[here.](https://humzakhan.net/demo/modish)**.
 
-!["Modish Preview"]("http://i.imgur.com/dCxRnXy.jpg")
+!["Modish Preview"](http://i.imgur.com/dCxRnXy.jpg)
 
 ## Installation
 You can install Modish utilizing various channels.
