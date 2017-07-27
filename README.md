@@ -2,7 +2,7 @@
 Built with Bootstrap 4, **Modish** is a modern and beautiful open source admin dashboard template free for any kind of use! It's fully responsive and fits very well of all kind of screen sizes, from small mobile phones to large desktops. Dependencies are managed with Bower and it has been entirely built with SASS. 
 
 ## Demo 
-You can view the template in active by clicking **[here.](https://humzakhan.net/demo/modish)**.
+You can view the template in active by clicking **[here.](https://humzakhan.net/demo/Modish/index.html)**
 
 !["Modish Preview"](http://i.imgur.com/dCxRnXy.jpg)
 
