@@ -17,7 +17,7 @@ git clone https://github.com/humzakhan/Modish.git
 
 #### Using NPM
 ```
-npm install modish --sav
+npm install modish --save
 ```
 
 #### Using Bower
