@@ -261,16 +261,21 @@
     display: block;
     float: left;
     height: 50px;
-    line-height: 50px;
-    text-align: center;
-    padding: 0 15px; }
+    line-height: 36px;
+    padding-left: 20px;
+    min-width: 250px;
+    margin-right: 0; }
+    @media (max-width: 768px) {
+      .navbar > .navbar-brand {
+        text-align: center; } }
     .navbar > .navbar-brand > img {
       height: 20px;
       width: auto; }
     .navbar > .navbar-brand:hover, .navbar > .navbar-brand:focus, .navbar > .navbar-brand:active {
       text-decoration: none; }
   .navbar .nav-link {
-    color: #fff; }
+    color: #fff;
+    padding: 0.9em 1em; }
     @media (max-width: 992px) {
       .navbar .nav-link {
         text-align: left; }

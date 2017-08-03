@@ -138,6 +138,9 @@ body {
       display: table-cell;
       vertical-align: top;
       width: 250px; } }
+  @media (max-width: 0) {
+    .sidebar {
+      display: none; } }
   @media (max-width: 768px) {
     .sidebar {
       width: 100%; } }
@@ -282,6 +285,21 @@ body {
         display: block;
         margin-top: 0.312rem;
         width: 250px; }
+
+.sidebar-toggle {
+  background-color: inherit;
+  color: #fff;
+  font-size: 0.875rem;
+  margin: 0;
+  padding: 15px 15px;
+  outline: 0; }
+  .sidebar-toggle:hover, .sidebar-toggle:active, .sidebar-toggle:visited, .sidebar-toggle:focus {
+    outline: 0;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: none; }
+  .sidebar-toggle:hover {
+    background-color: #1b628b; }
 
 /************************************************************************
 *

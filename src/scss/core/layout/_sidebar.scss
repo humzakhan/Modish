@@ -23,6 +23,10 @@
         width: $sidebar-base-width;
     }
 
+    @media(max-width: $screen-size-xs) {
+        display: none;
+    }
+
     @media (max-width: $screen-size-md) {
         width: 100%;
     }
@@ -225,5 +229,28 @@
                 width: $sidebar-base-width;
             }
         }
+    }
+}
+
+.sidebar-toggle {
+    background-color: inherit;
+    color: #fff;
+    font-size: $font-size-base;
+    margin: 0;
+    padding: $content-padding-base $content-padding-base;
+    outline: 0;
+    
+    &:hover,
+    &:active,
+    &:visited,
+    &:focus {
+        outline: 0;
+        color: #fff;
+        text-decoration: none;
+        box-shadow: none;
+    }
+
+    &:hover {
+        background-color: darken($color-primary-3, 10%);
     }
 }

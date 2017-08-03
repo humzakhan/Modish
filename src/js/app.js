@@ -17,6 +17,10 @@ $(function () {
         $('.sidebar').slideToggle('slow');
     });
 
+    $('#toggle-sidebar-desktop').click(function() {
+        $('.sidebar').animate({width:'toggle'},250);
+    });
+
     // Tabs
     // ------------------------------------------------------------------
 

@@ -24,9 +24,14 @@
         display: block;
         float: left;
         height: 50px;
-        line-height: 50px;
-        text-align: center;
-        padding: 0 15px;
+        line-height: 36px;
+        padding-left: $content-padding-large;
+        min-width: $sidebar-base-width;
+        margin-right: 0;
+
+        @media(max-width: $screen-size-md) {
+            text-align: center;
+        }
         
         > img {
             height: 20px;
@@ -42,6 +47,7 @@
 
     .nav-link {
         color: #fff;
+        padding: 0.9em 1em;
 
         @media(max-width: $screen-size-lg) {
             text-align: left;
