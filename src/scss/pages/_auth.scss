@@ -40,14 +40,25 @@
     }
 }
 
-#login {
-    >.card {
+.login,
+.register {
+    &.card {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+#login,
+.login {
+    &.card {
         max-width: $login-container-width;
     }
 }
 
-#register {
-    >.card {
+#register,
+.register {
+    &.card {
         max-width: $register-container-width;
     }
 }

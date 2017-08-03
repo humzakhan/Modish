@@ -682,10 +682,18 @@ table.dataTable thead .sorting_desc_disabled {
   .auth-box input:focus {
     border-color: rgba(0, 0, 0, 0.15) !important; }
 
-#login > .card {
+.login.card,
+.register.card {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+#login.card,
+.login.card {
   max-width: 350px; }
 
-#register > .card {
+#register.card,
+.register.card {
   max-width: 600px; }
 
 /************************************************************************
