@@ -23,7 +23,7 @@
         width: $sidebar-base-width;
     }
 
-    @media(max-width: $screen-size-xs) {
+    @media(max-width: $screen-size-md) {
         display: none;
     }
 

@@ -138,7 +138,7 @@ body {
       display: table-cell;
       vertical-align: top;
       width: 250px; } }
-  @media (max-width: 0) {
+  @media (max-width: 768px) {
     .sidebar {
       display: none; } }
   @media (max-width: 768px) {
