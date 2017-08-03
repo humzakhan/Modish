@@ -1,0 +1,5 @@
+.input-group {
+    @media(max-width: $screen-size-md) {
+        margin-bottom: $content-padding-small;
+    }
+}

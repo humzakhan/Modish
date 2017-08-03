@@ -542,6 +542,10 @@
       font-size: 1.05rem;
       color: #333; }
 
+@media (max-width: 768px) {
+  .input-group {
+    margin-bottom: 10px; } }
+
 /************************************************************************
 *
 * overrides.scss 
