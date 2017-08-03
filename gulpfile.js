@@ -10,6 +10,7 @@ var plumber = require('gulp-plumber');
 var expect = require('gulp-expect-file');
 var inject = require('gulp-inject');
 var mainBowerFiles = require('main-bower-files');
+var bowerNormalize = require('gulp-bower-normalize');
 
 gulp.task('watch:sass', function () {
     gulp.watch(['src/scss/*.scss', 'src/scss/core/**/*', 'src/scss/components/**/*', 'src/scss/**/*'], ['build:sass'])
@@ -63,9 +64,10 @@ gulp.task('inject:navbar', function () {
         .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('deploy:copy-assets', function () {
+gulp.task('deploy:assets', function () {
     return gulp.src(mainBowerFiles())
-        .pipe(gulp.dest('dist/bower_components'));
+        .pipe(bowerNormalize({ flatten: false }))
+        .pipe(gulp.dest('dist/lib'));
 });
 
 gulp.task('deploy', ['deploy:copy-assets']);

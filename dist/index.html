@@ -13,13 +13,44 @@
     <link rel="stylesheet" href="assets/css/core.css">
     <link rel="stylesheet" href="assets/css/components.css">
     <link rel="stylesheet" href="assets/icons/fontawesome/styles.min.css">
-    <link rel="stylesheet" href="bower_components/chartist.min.css">
+    <link rel="stylesheet" href="lib/css/chartist.min.css">
 
-    <script type="text/javascript" src="bower_components/jquery.min.js"></script>
-    <script type="text/javascript" src="bower_components/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/js/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/js/tether.min.js"></script>
+    <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript" src="bower_components/chartist.min.js"></script>
+    <script type="text/javascript" src="lib/js/chartist.min.js"></script>
     <script type="text/javascript" src="assets/js/app.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            // Dashboard Sales Chart
+            // ------------------------------------------------------------------
+
+            var dataMain = {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                series: [
+                    [5, 4, 3, 7, 5, 10, 3, 4, 8, 10, 6, 8],
+                    [3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4]
+                ]
+            };
+
+            var optionsMain = {
+                seriesBarDistance: 10
+            };
+
+            var responsiveOptionsMain = [
+                ['screen and (max-width: 640px)', {
+                    seriesBarDistance: 5,
+                    axisX: {
+                        labelInterpolationFnc: function (value) {
+                            return value[0];
+                        }
+                    }
+                }]
+            ];
+            var chart = new Chartist.Bar('.ct-chart-dashboard', dataMain, optionsMain, responsiveOptionsMain);
+        });
+    </script>
 </head>
 
 <body>

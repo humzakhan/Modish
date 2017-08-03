@@ -19,8 +19,90 @@
     "bootstrap": "v4.0.0-alpha.6",
     "jquery": "^3.2.1",
     "tether": "^1.4.0",
+    "pickadate": "^3.5.6",
+    "chartist": "^0.11.0",
     "datatables.net": "^1.10.15",
     "datatables.net-dt": "^3.2.2",
     "datatables.net-bs": "^2.1.1"
-  }
+  },
+
+  "overrides": {
+        "bootstrap": {
+            "main": [
+                "dist/css/bootstrap.min.css",
+                "dist/js/bootstrap.min.js",
+                "fonts/glyphicons-halflings-regular.eot",
+                "fonts/glyphicons-halflings-regular.svg",
+                "fonts/glyphicons-halflings-regular.ttf",
+                "fonts/glyphicons-halflings-regular.woff",
+                "fonts/glyphicons-halflings-regular.woff2"
+            ],
+            "normalize": {
+                "fonts": ["*.eot", "*.svg", "*.ttf", "*.woff", "*.woff2"]
+            }
+        },
+
+        "jquery": {
+            "main": [
+              "dist/jquery.min.js"
+            ]
+        },
+
+        "chartist": {
+            "main": [
+                "dist/chartist.min.css",
+                "dist/chartist.min.js"
+            ]
+        },
+
+        "tether": {
+            "main": [
+                "dist/css/tether.min.css",
+                "dist/js/tether.min.js"
+            ]
+        },
+
+        "pickadate": {
+            "main": [
+                "lib/compressed/legacy.js",
+                "lib/compressed/picker.date.js",
+                "lib/compressed/picker.time.js",
+                "lib/compressed/picker.js",
+                "lib/compressed/themes/classic.css",
+                "lib/compressed/themes/classic.date.css",
+                "lib/compressed/themes/classic.time.css",
+                "lib/compressed/themes/default.css",
+                "lib/compressed/themes/default.date.css",
+                "lib/compressed/themes/default.time.css",
+                "lib/compressed/themes/rtl.css"
+            ]
+        },
+
+        "datatables.net": {
+            "main": [
+                "js/jquery.dataTables.min.js"
+            ]
+        },
+
+        "datatables.net-bs": {
+            "main": [
+                "css/dataTables.bootstrap.min.css",
+                "js/dataTables.bootstrap.min.js"
+            ]
+        },
+
+        "datatables.net-dt": {
+            "main": [
+                "css/jquery.dataTables.min.css",
+                "images/sort_asc_disabled.png",
+                "images/sort_asc.png",
+                "images/sort_both.png",
+                "images/sort_desc_disabled.png",
+                "images/sort_desc.png"
+            ],
+            "normalize": {
+                "images": ["*.png"]
+            }
+        }
+    } 
 }

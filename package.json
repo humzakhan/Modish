@@ -18,6 +18,7 @@
   "homepage": "https://github.com/humzakhan/modish#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-bower-normalize": "^1.1.1",
     "gulp-cssmin": "^0.1.7",
     "gulp-expect-file": "0.0.7",
     "gulp-inject": "^4.2.0",
