@@ -133,15 +133,15 @@ body {
   position: relative;
   background-color: #181717;
   color: #c3c3c5; }
-  @media (min-width: 768px) {
+  @media (min-width: 920px) {
     .sidebar {
       display: table-cell;
       vertical-align: top;
       width: 250px; } }
-  @media (max-width: 768px) {
+  @media (max-width: 920px) {
     .sidebar {
       display: none; } }
-  @media (max-width: 768px) {
+  @media (max-width: 920px) {
     .sidebar {
       width: 100%; } }
   .sidebar-block {
@@ -293,6 +293,9 @@ body {
   margin: 0;
   padding: 15px 15px;
   outline: 0; }
+  @media (max-width: 768px) {
+    .sidebar-toggle {
+      display: none; } }
   .sidebar-toggle:hover, .sidebar-toggle:active, .sidebar-toggle:visited, .sidebar-toggle:focus {
     outline: 0;
     color: #fff;

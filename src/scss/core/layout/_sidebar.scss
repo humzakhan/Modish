@@ -240,6 +240,10 @@
     padding: $content-padding-base $content-padding-base;
     outline: 0;
     
+    @media(max-width: $screen-size-md) {
+        display: none;
+    }
+
     &:hover,
     &:active,
     &:visited,

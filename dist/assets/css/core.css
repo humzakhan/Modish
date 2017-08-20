@@ -287,7 +287,7 @@
     box-shadow: none;
     -webkit-box-shadow: none;
     border-radius: 0;
-    margin-top: 6px; }
+    margin-top: -1px; }
     @media (max-width: 992px) {
       .navbar .dropdown-menu {
         border: 0;
