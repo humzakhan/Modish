@@ -1,3 +1,12 @@
+## v1.0.2
+
+#### Enhancements
+
+- Fix ul elements in alerts.
+- Make navbar image responsive.
+- Enhance button styling.
+
+
 ## v1.0.1
 
 #### Fixed

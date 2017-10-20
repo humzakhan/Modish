@@ -11,8 +11,14 @@
 
 .btn {
     position: relative;
-    font-size: $font-size-sm;
     margin: 2px;
+    font-weight: bold;
+    position: relative;
+    font-size: 0.8rem;
+    margin: 2px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+
     >i {
         font-size: 12px;
     }
@@ -49,4 +55,11 @@
 
 .btn-lg {
     padding: 0.8em 0.8em;
+}
+
+body,
+input,
+textarea,
+button {
+    font-family: $font-family-base;
 }

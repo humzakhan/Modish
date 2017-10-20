@@ -220,8 +220,13 @@
 *************************************************************************/
 .btn {
   position: relative;
-  font-size: 0.688rem;
-  margin: 2px; }
+  margin: 2px;
+  font-weight: bold;
+  position: relative;
+  font-size: 0.8rem;
+  margin: 2px;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif; }
   .btn > i {
     font-size: 12px; }
   .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
@@ -237,6 +242,12 @@
 
 .btn-lg {
   padding: 0.8em 0.8em; }
+
+body,
+input,
+textarea,
+button {
+  font-family: "Lato", sans-serif; }
 
 /************************************************************************
 *
@@ -339,6 +350,10 @@
     cursor: pointer; }
   .navbar-toggler:hover, .navbar-toggler:focus, .navbar-toggler:active {
     outline: none; }
+
+.navbar > .navbar-brand > img {
+  height: auto;
+  width: auto; }
 
 /************************************************************************
 *
@@ -454,7 +469,10 @@
   border-radius: 0; }
 
 .card-title {
-  margin-bottom: 15px; }
+  margin-bottom: 30px !important; }
+
+.card-header {
+  padding: 12px 7px; }
 
 /************************************************************************
 *
@@ -476,6 +494,10 @@
     background-color: #F78643; }
   .alert-solid.alert-success {
     background-color: #3C7D30; }
+
+.alert ul {
+  text-align: left;
+  list-style-type: none; }
 
 /************************************************************************
 *
@@ -545,6 +567,11 @@
 @media (max-width: 768px) {
   .input-group {
     margin-bottom: 10px; } }
+
+@media (min-width: 420px) {
+  .form-horizontal {
+    text-align: left;
+    vertical-align: middle; } }
 
 /************************************************************************
 *

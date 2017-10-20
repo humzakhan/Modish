@@ -16,5 +16,9 @@
 }
 
 .card-title {
-    margin-bottom: $content-padding-large - 5;
+    margin-bottom: $content-padding-large + ($content-padding-large * 0.5) !important; 
+}
+
+.card-header {
+    padding: $padding-base-horizontal $padding-base-vertical;
 }

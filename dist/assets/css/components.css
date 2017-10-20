@@ -116,6 +116,15 @@ body {
     padding-left: 4px;
     font-weight: 300; }
 
+.main-footer {
+  background: #fff;
+  padding: 15px;
+  color: #444;
+  border-top: 1px solid #d2d6de;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
 /************************************************************************
 *
 * siderbar.scss 
