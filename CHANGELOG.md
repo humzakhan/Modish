@@ -9,6 +9,9 @@
 - Change button's default text to 'Raleway'.
 - Improve overall look and feel.
 
+#### Added 
+- CK Editor
+
 
 ## v1.0.1
 
