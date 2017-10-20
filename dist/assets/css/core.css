@@ -307,7 +307,10 @@ button {
         margin: 0;
         width: 100%; } }
     .navbar .dropdown-menu > .dropdown-item {
-      font-weight: 600; }
+      font-weight: 600;
+      color: #585757; }
+      .navbar .dropdown-menu > .dropdown-item:active {
+        color: #fff; }
   .navbar .dropdown .dropdown-toggle:not(.dropdown-has-after):after {
     content: ''; }
   .navbar .navbar-nav .badge {
@@ -401,7 +404,7 @@ button {
     font-size: 0.875rem; }
     .dropdown-menu .dropdown-item > span {
       position: absolute;
-      left: 36px; }
+      left: 45px; }
     .dropdown-menu .dropdown-item > i,
     .dropdown-menu .dropdown-item > img {
       margin-right: 10px; }

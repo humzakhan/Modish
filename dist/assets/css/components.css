@@ -329,6 +329,9 @@ body {
 .width-300 {
   width: 300px; }
 
+.width-190 {
+  width: 190px !important; }
+
 .height-200 {
   height: 200px; }
 

@@ -78,6 +78,11 @@
 
         > .dropdown-item {
             font-weight: 600;
+            color: #585757;
+
+            &:active {
+                color: #fff;
+            }
         }
     }
 
