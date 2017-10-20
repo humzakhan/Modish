@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Modish - Open Source Admin Dashboard Template</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/core.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/icons/fontawesome/styles.min.css">
+    <link rel="stylesheet" href="lib/css/chartist.min.css">
+
+    <script type="text/javascript" src="lib/js/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/js/tether.min.js"></script>
+    <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-toggleable-md">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav">
+            <span>
+                <i class="fa fa-code-fork"></i>
+            </span>
+        </button>
+
+        <button class="navbar-toggler navbar-toggler-left" type="button" id="toggle-sidebar">
+            <span>
+               <i class="fa fa-align-justify"></i>
+            </span>
+        </button>
+
+        <a class="navbar-brand logo" href="#">
+            <img src="assets/img/logo.png" alt="Modish">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <button class="sidebar-toggle btn btn-flat" id="toggle-sidebar-desktop">
+                <span>
+                    <i class="fa fa-align-justify"></i>
+                </span>
+            </button>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle nav-icon" data-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-bell-o"></i>
+                        <span class="hidden-lg-up position-right">Notifications</span>
+                        <span class="badge bg-danger-4">8</span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right width-300 list-notifications">
+                        <ul class="list-unstyled">
+                            <li class="media notif-unread">
+                                You have 3 unread notifications!
+                            </li>
+                            <li class="media">
+                                <div class="notif-icon bg-primary-4">
+                                    <i class="fa fa-bell-o"></i>
+                                </div>
+                                <div class="media-body notif-text">
+                                    You may want to check this!
+                                </div>
+                            </li>
+                            <li class="media mr-2">
+                                <div class="notif-icon bg-danger-4">
+                                    <i class="fa fa-exclamation"></i>
+                                </div>
+                                <div class="media-body notif-text text-danger-4">
+                                    Server Banshee is not responding.
+                                </div>
+                            </li>
+                            <li class="media">
+                                <div class="notif-icon bg-success-4">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <div class="media-body notif-text text-success-4">
+                                    Backup completed successfully.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle dropdown-has-after" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <img src="assets/img/default-user.jpg" alt="" class="user-img"> John Doe
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-user"></i> <span>Profile</span></a>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-comment"></i> <span>Messages</span></a>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-cog"></i> <span>Settings</span></a>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-sign-out"></i> <span>Logout</span></a>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /NAVBAR -->
+
+    <div class="page-container">
+        <div class="page-content">
+            <!-- inject:SIDEBAR -->
+
+            <div id="sidebar-main" class="sidebar sidebar-default">
+    <div class="sidebar-content">
+        <ul class="navigation">
+            <li class="navigation-header">
+                <span>Main</span>
+                <i class="icon-menu"></i>
+            </li>
+
+            <li>
+                <a href="index.html"><i class="fa fa-home"></i> <span>Dashboard</span></a>
+            </li>
+
+            <li class="navigation-header">
+                <span>Forms</span>
+                <i class="icon-menu"></i>
+            </li>
+
+            <li>
+                <a href="index.html"><i class="fa fa-pencil"></i> <span>Form Elements</span></a>
+                <ul>
+                    <li><a href="inputs.html">Inputs</a></li>
+                    <li><a href="input_groups.html">Input Groups</a></li>
+                    <li><a href="layout_horizontal.html">Horizontal Layout</a></li>
+                    <li><a href="layout_vertical.html">Vertical Layout</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="index.html"><i class="fa fa-th"></i> <span>Components</span></a>
+                <ul>
+                    <li><a href="components_buttons.html">Buttons</a></li>
+                    <li><a href="components_dropdowns.html">Dropdown Menus</a></li>
+                    <li><a href="components_navs.html">Tabs, Accordions &amp; Navs</a></li>
+                    <li><a href="components_badges.html">Labels &amp; Badges</a></li>
+                    <li><a href="components_alerts.html">Alerts</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="index.html"><i class="fa fa-heart"></i> <span>Icons</span></a>
+                <ul>
+                    <li><a href="icons_fontawesome.html">Font Awesome</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="index.html"><i class="fa fa-mouse-pointer"></i> <span>Pickers</span></a>
+                <ul>
+                    <li><a href="pickers_date.html">Date Pickers</a></li>
+                    <li><a href="pickers_time.html">Time Pickers</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="index.html"><i class="fa fa-table"></i> <span>Tables</span></a>
+                <ul>
+                    <li><a href="tables_basic.html">Basic Tables</a></li>
+                    <li><a href="tables_datatables.html">Data Tables</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="index.html"><i class="fa fa-area-chart"></i> <span>Charts</span></a>
+                <ul>
+                    <li><a href="charts_chartist.html">Chartist.js</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="index.html"><i class="fa fa-magic"></i> <span>Appearence</span></a>
+                <ul>
+                    <li><a href="appearence_panels.html">Content Panels</a></li>
+                    <li><a href="appearence_typography.html">Typography</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="index.html"><i class="fa fa-edit"></i> <span>Editors</span></a>
+                <ul>
+                    <li><a href="editors_ck.html">CK Editor</a></li>
+                </ul>
+            </li>
+
+            <li class="navigation-header">
+                <span>Pages</span>
+                <i class="icon-menu"></i>
+            </li>
+
+            <li>
+                <a href="index.html"><i class="fa fa-file-o"></i> <span>Pages</span></a>
+                <ul>
+                    <li><a href="pages_login.html">Login</a></li>
+                    <li><a href="pages_register.html">Register</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+            <!-- inject:/SIDEBAR -->
+
+            <!-- PAGE CONTENT -->
+            <div class="content-wrapper">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="page-title">CK Editor</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="alert alert-info" role="alert">
+                                <strong>CK Editor</strong> is the battle-tested editor, when you need even more features and legacy compatibility.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-block">
+                                    <h4 class="card-title">Example</h4>
+                                    <div id="editor-main">
+                                        <h2>Computer Science</h2>
+                                        
+                                        <p><strong>Computer science</strong> is the study of the theory, experimentation, and engineering that form the basis for the design and use of <a href="/wiki/Computer">computers</a>. It is the scientific and practical approach to <a href="/wiki/Computation">computation</a> and its applications and the systematic study of the feasibility, structure, expression, and mechanization of the methodical <a href="/wiki/Procedure_(computer_science)">procedures</a> (or <a href="/wiki/Algorithm">algorithms</a>) that underlie the acquisition, representation, processing, storage, communication of, and access to <a href="/wiki/Information">information</a>. An alternate, more succinct definition of computer science is the study of automating algorithmic processes that scale. A <a href="/wiki/Computer_scientist">computer scientist</a> specializes in the theory of computation and the design of computational systems.</p>
+                                        
+                                        <h2>Contributions</h2>
+                                        
+                                        <p>Despite its short history as a formal academic discipline, computer science has made a number of fundamental contributions to <a href="/wiki/Science">science</a> and <a href="/wiki/Society">society</a>&mdash;in fact, along with <a href="/wiki/Electronics">electronics</a>, it is a founding science of the current epoch of human history called the <a href="/wiki/Information_Age"> Information Age</a> and a driver of the <a href="/wiki/Information_revolution">Information Revolution</a>, seen as the third major leap in human technological progress after the <a href="/wiki/Industrial_Revolution">Industrial Revolution</a> (1750&ndash;1850 CE) and the <a href="/wiki/Neolithic_Revolution"> Agricultural Revolution</a> (8000&ndash;5000 BC).</p>
+                                        
+                                        <ul>
+                                            <li>The start of the &quot; <a href="/wiki/Digital_Revolution">digital revolution</a>&quot;, which includes the current <a href="/wiki/Information_Age">Information Age</a> and the <a href="/wiki/Internet">Internet</a>. <a href="#cite_note-bgu-23">[21]</a></li>
+                                            <li>A formal definition of <a href="/wiki/Computation">computation</a> and <a href="/wiki/Computability">computability</a>, and proof that there are computationally <a href="/wiki/Undecidable_problem">unsolvable</a> and <a href="/wiki/Computational_complexity_theory#Intractability">intractable</a> problems. <a href="#cite_note-24">[22]</a></li>
+                                            <li>The concept of a <a href="/wiki/Programming_language">programming language</a>, a tool for the precise expression of methodological information at various levels of abstraction. <a href="#cite_note-25">[23]</a></li>
+                                            <li>In <a href="/wiki/Cryptography">cryptography</a>, <a href="/wiki/Cryptanalysis_of_the_Enigma">breaking the Enigma code</a> was an important factor contributing to the Allied victory in World War II. <a href="#cite_note-kahnbook-22">[20]</a></li>
+                                            <li><a href="/wiki/Computational_science">Scientific computing</a> enabled practical evaluation of processes and situations of great complexity, as well as experimentation entirely by software. It also enabled advanced study of the mind, and mapping of the human genome became possible with the <a href="/wiki/Human_Genome_Project">Human Genome Project</a>. <a href="#cite_note-bgu-23">[21]</a> <a href="/wiki/Distributed_computing">Distributed computing</a> projects such as <a href="/wiki/Folding@home">Folding@home</a> explore <a href="/wiki/Protein_folding">protein folding</a>.</li>
+                                            <li><a href="/wiki/Algorithmic_trading">Algorithmic trading</a> has increased the <a href="/wiki/Economic_efficiency">efficiency</a> and <a href="/wiki/Market_liquidity">liquidity</a> of financial markets by using <a href="/wiki/Artificial_intelligence">artificial intelligence</a>, <a href="/wiki/Machine_learning">machine learning</a>, and other <a href="/wiki/Statistics">statistical</a> and <a href="/wiki/Numerical_analysis">numerical</a> techniques on a large scale. <a href="#cite_note-26">[24]</a> High frequency algorithmic trading can also exacerbate <a href="/wiki/Volatility_(finance)">volatility</a>. <a href="#cite_note-27">[25]</a></li>
+                                            <li><a href="/wiki/Computer_graphics">Computer graphics</a> and <a href="/wiki/Computer-generated_imagery">computer-generated imagery</a> have become ubiquitous in modern <a href="/wiki/Entertainment">entertainment</a>, particularly in <a href="/wiki/Television">television</a>, <a href="/wiki/Filmmaking">cinema</a>, <a href="/wiki/Advertising">advertising</a>, <a href="/wiki/Animation">animation</a> and <a href="/wiki/Video_game">video games</a>. Even films that feature no explicit <a href="/wiki/Computer-generated_imagery">CGI</a> are usually &quot;filmed&quot; now on <a href="/wiki/Digital_camera">digital cameras</a>, or <a href="/wiki/Video_editing">edited</a> or <a href="/wiki/Video_post-processing">post-processed</a> using a digital video editor. <a href="#cite_note-28">[26]</a> <a href="#cite_note-29">[27]</a></li>
+                                            <li><a href="/wiki/Simulation">Simulation</a> of various processes, including computational <a href="/wiki/Fluid_dynamics">fluid dynamics</a>, physical, electrical, and electronic systems and circuits, as well as societies and social situations (notably war games) along with their habitats, among many others. Modern computers enable optimization of such designs as complete aircraft. Notable in electrical and electronic circuit design are <a href="/wiki/SPICE">SPICE</a>, as well as software for physical realization of new (or modified) designs. The latter includes essential design software for <a href="/wiki/Integrated_circuit">integrated circuits</a>. [ <em> <a href="/wiki/Wikipedia:Citation_needed"> citation needed </a> </em>]</li>
+                                            <li><a href="/wiki/Artificial_intelligence">Artificial intelligence</a> is becoming increasingly important as it gets more efficient and complex. There are many applications of AI, some of which can be seen at home, such as <a href="/wiki/Robotic_vacuum_cleaner">robotic vacuum cleaners</a>. It is also present in video games and on the modern battlefield in drones, anti-missile systems, and <a href="/wiki/Legged_Squad_Support_System">squad support robots</a>.</li>
+                                            <li><a href="/wiki/Human-Computer_Interaction">Human-Computer Interaction</a> combines novel algorithms with design strategies that enable rapid human performance, low error rates, ease in learning, and high satisfaction. Researchers use ethnographic observation and automated data collection to understand user needs, then conduct usability tests to refine designs. Key innovations include the <a href="/wiki/Direct_manipulation">direct manipulation</a>, selectable web links, <a href="/wiki/Touchscreen">touchscreen</a> designs, mobile applications, and <a href="/wiki/Virtual_reality">virtual reality</a>.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /PAGE CONTENT -->
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="lib/thirdparty/ckeditor/ckeditor.js"></script>
+<script type="text/javascript">
+$(function() {
+    CKEDITOR.replace("editor-main",{height:"350px",extraPlugins:"forms"});
+});
+</script>
+</html>
