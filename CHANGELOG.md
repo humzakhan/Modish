@@ -5,6 +5,9 @@
 - Fix ul elements in alerts.
 - Make navbar image responsive.
 - Enhance button styling.
+- Enhance navbar items styling.
+- Change button's default text to 'Raleway'.
+- Improve overall look and feel.
 
 
 ## v1.0.1

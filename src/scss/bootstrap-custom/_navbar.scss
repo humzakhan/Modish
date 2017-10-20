@@ -69,6 +69,10 @@
         border-radius: 0;
         margin-top: -1px;
 
+        @media(min-width: $screen-size-md) {
+            width: 190px;
+        }
+
         @media(max-width: $screen-size-lg) {
             border: 0;
             padding: 0;
