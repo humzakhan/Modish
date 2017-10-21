@@ -1,3 +1,7 @@
+## v1.0.3
+
+Minor Enhancements
+
 ## v1.0.2
 
 #### Enhancements

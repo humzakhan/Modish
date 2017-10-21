@@ -484,15 +484,13 @@ button {
 *************************************************************************/
 .card {
   margin-bottom: 20px;
+  margin-top: 20px;
   color: #333;
   border-radius: 0; }
 
 /*.card-title {
     margin-bottom: $content-padding-large + ($content-padding-large * 0.5) !important; 
 }*/
-.card-header {
-  padding: 12px 7px; }
-
 /************************************************************************
 *
 * alerts.scss 
